@@ -349,10 +349,28 @@ input[type="submit"] {
 }
 
 
-
 .floatas>div .clearfix {
     clear: both;
     display: block;
     height: 0;
     width: 100%;
+}
+.menu {
+    width:60%;
+    border:1px solid red;
+    margin:0 auto;
+    margin-top:25px;
+}
+
+.menu a {
+    display:block;
+    margin-bottom:10px;
+    font-size:25px;
+    text-align: center;
+}
+
+.menu h2 {
+    font-size:35px;
+    margin-bottom:15px;
+    text-align: center;
 }
