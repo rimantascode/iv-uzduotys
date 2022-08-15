@@ -311,24 +311,26 @@ input[type="submit"] {
 .trecias {
     background-color: wheat;
     float: left;
+    display: inline-block;
 
 }
 
 .sestas {
     background-color: cyan;
     float: left;
+    display: inline-block;
 }
 
 .antras {
     background-color: green;
+    display: inline-block;
     float: right;
 
 }
 
 .septintas {
     background-color: blue;
-    float: right;
-
+    float: right
 }
 
 .penktas {
@@ -341,8 +343,8 @@ input[type="submit"] {
     background-color: orange;
     float: right;
     margin-right: 50px;
+    display: block;
 }
-
 
 .astuntas {
     background-color: brown;
