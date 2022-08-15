@@ -292,21 +292,16 @@ input[type="submit"] {
     font-size: 0;
 }
 
-.floatas {
-    margin-top: 25px;
+.floatas>div {
+    width:150px;
+    height:50px;
+    font-size:16px;
 }
 
 .floatas>div {
     display: block;
     /* border: 2px solid red */
 }
-
-.floatas>div div {
-    height: 50px;
-    width: 150px;
-    font-size: 16px;
-}
-
 
 .trecias {
     background-color: wheat;
@@ -337,6 +332,7 @@ input[type="submit"] {
     background-color: purple;
     margin-left: 50px;
     display: inline-block;
+    float:left;
 }
 
 .pirmas {
@@ -352,16 +348,8 @@ input[type="submit"] {
     margin: 0 auto;
 }
 
-.antras-aukstas {
 
-    background-color: red;
-}
-
-.pirmas-aukstas {
-    background-color: green;
-}
-
-.floatas>div .clearfix {
+.floatas .clearfix {
     clear: both;
     display: block;
     height: 0;
