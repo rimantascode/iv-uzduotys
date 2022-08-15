@@ -286,3 +286,82 @@ input[type="submit"] {
     margin-top: 5px;
     margin-left: 40%;
 }
+
+/* ----------------------------------------- float Uzduotis -----------------------------------------  */
+.fbody {
+    font-size: 0;
+}
+
+.floatas {
+    margin-top: 25px;
+}
+
+.floatas>div {
+    display: block;
+    /* border: 2px solid red */
+}
+
+.floatas>div div {
+    height: 50px;
+    width: 150px;
+    font-size: 16px;
+}
+
+
+.trecias {
+    background-color: wheat;
+    float: left;
+
+}
+
+.sestas {
+    background-color: cyan;
+    float: left;
+}
+
+.antras {
+    background-color: green;
+    float: right;
+
+}
+
+.septintas {
+    background-color: blue;
+    float: right;
+
+}
+
+.penktas {
+    background-color: purple;
+    margin-left: 50px;
+    display: inline-block;
+}
+
+.pirmas {
+    background-color: orange;
+    float: right;
+    margin-right: 50px;
+}
+
+
+.astuntas {
+    background-color: brown;
+    display: block;
+    margin: 0 auto;
+}
+
+.antras-aukstas {
+
+    background-color: red;
+}
+
+.pirmas-aukstas {
+    background-color: green;
+}
+
+.floatas>div .clearfix {
+    clear: both;
+    display: block;
+    height: 0;
+    width: 100%;
+}
