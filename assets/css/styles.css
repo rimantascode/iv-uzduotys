@@ -1,0 +1,288 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* mano kodas */
+
+/* ----------------------------------------- 0 Uzduotis -----------------------------------------  */
+
+
+
+body {
+    background-color: rgb(233, 219, 219);
+    font-size: 16px;
+    width: 100%;
+}
+
+h1 {
+    margin: 15px 0 20px 10px;
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+}
+
+p {
+    margin: 15px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0px 0 20px 35px;
+}
+
+ul li {
+    line-height: 15px;
+}
+
+ul img {
+    max-width: 15px;
+    max-height: 15px;
+    margin-right: 15px;
+}
+
+table,
+tr,
+td,
+th {
+    border: 1px solid black;
+}
+
+table {
+    margin: 0px 0 20px 10px;
+    background-color: #e1ebf2;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+tr {
+    line-height: 40px;
+}
+
+td {
+    padding: 10px;
+}
+
+tr:first-child {
+    color: white;
+    background-color: #76a0cb;
+    border-bottom: 3px solid #d8e4eb;
+}
+
+tr:first-child th:first-child {
+    border-radius: 15px;
+}
+
+tr:first-child th:last-child {
+    border-radius: 15px;
+}
+
+
+tr:nth-child(even) {
+    background-color: #d8e4eb;
+}
+
+fieldset {
+    border: 1px solid black;
+    margin: 0 0 20px 10px;
+    width: 50%;
+}
+
+legend {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+fieldset>div {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+fieldset>div input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 50%;
+}
+
+fieldset>div select {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 50%;
+}
+
+.tarkim>div {
+    display: inline-block;
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    margin-left: 50%;
+}
+
+.tarkim>div span {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 54%;
+}
+
+.tarkim>div:first-child span {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 54%;
+}
+
+.tarkim .paskutinis input {
+    margin-left: 70%;
+}
+
+.tarkim>div:last-child span {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 74%;
+}
+
+input[type="submit"] {
+    background-color: green;
+    border-radius: 10px;
+    color: white;
+    margin-top: 5px;
+    margin-left: 40%;
+}
