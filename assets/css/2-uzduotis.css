@@ -50,7 +50,7 @@ table {
 /* mano kodas */
 
 body {
-    font-size:0;
+    /* font-size:0; */
     background-color:#f3f3f3
 }
 span {
@@ -64,7 +64,7 @@ section>div:first-child>span{
 }
 
 section{
-  width:85%;
+  width:80%;
   margin: 0 auto;
   margin-top:100px;
   font-size:0;
@@ -79,6 +79,7 @@ section>div:first-child{
   border-radius: 4px;
   background-color: #ffff;  
   box-sizing:border-box;
+  
 }
 
 section>div:last-child{
@@ -91,6 +92,7 @@ section>div:last-child{
     background-color: #fff;
     box-sizing:border-box;
     margin-left:2%;
+
 }
 
 h3 {
@@ -124,31 +126,30 @@ section>div:last-child h3 + span {
   margin:0;
 }
 
-section>div:first-child a span {
-    height:50px;
-    width:150px;
+section>div:first-child a {
     margin:0 auto;
-    line-height: 50px;
     border-radius:4px;
     background-color: #36bee1;
     border:1px solid #0f4f60;
     color:white;
+    display: inline-block;
+    padding:15px;
+    margin-bottom:15px;
   }
 
-section>div:last-child a span {
-  height:50px;
-  width:150px;
+section>div:last-child a {
   margin:0 auto;
-  line-height: 50px;
   border-radius:4px;
   background-color: #f77924;
   border:1px solid #af561a;
   color:white;
+  display: inline-block;
+  padding:15px;
+  margin-bottom:15px;
 }
 
 a {
   text-decoration: none;
-  padding:0 8px 0 8px;
 }
 
 @media only screen and (max-width: 600px) {
