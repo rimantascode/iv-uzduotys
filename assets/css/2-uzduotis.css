@@ -125,7 +125,6 @@ section>div:last-child h3 + span {
 }
 
 section>div:first-child a span {
-/* .btn{ */
     height:50px;
     width:150px;
     margin:0 auto;
