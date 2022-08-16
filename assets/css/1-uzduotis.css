@@ -79,12 +79,12 @@ ul li {
 section>div  {
     width:80%;
     background-color: white;
-    height: 15vh;
+    min-height: 15vh;
     margin: 0 auto;
     margin-bottom: 15px;
     font-size: 16px;
     padding:10px;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 
 section div :nth-child(2){
@@ -104,15 +104,22 @@ section div :nth-child(2){
     display: inline-block;
     float:left;
     font-size:16px;
+    height:auto;
+    position:realative;
 }
 .desine {
     width:49%;
     float:right;
-    display: block;
+    display: inline-block;
+    hight:auto;
 }
 .clearfix {
     clear:both
 }
 
+a {
+    text-decoration: none;
+    color:white;
+}
 
 
