@@ -48,41 +48,51 @@ table {
 }
 
 /* mano kodas */
-header {
+
+section {
 	width: 100%;
+    font-size:0;
+    height: 500px;
+    position:relative;
 }
 
-/* header :first-child {
+section>div:first-child {
 	width: 50%;
-	background-color: green;
-	display:inline-block;
-	
-} */
+	display: inline-block;
+}
+
+section>div:nth-child(2)>div:first-child{
+    margin-left:15px;
+} 
+
 img {
-	width: 50%;
-	display: inline-block;
-	float:left;
+   width:100%;
+    height:500px;
+   object-fit:cover;
 }
 
-.aprasymas {
-	width:50%;
-	display: inline-block;
-	float:right;
-}
-.clearfix {
-	clear: both;
+section>div:nth-child(2){
+    width:50%;
+    display: inline-block;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);  
 }
 
-form input[type="text"],input[type="email"] {
+
+form input[type="text"], input[type="email"] {
 	margin:5px 0 5px 0;
-	height:25px;
+	height:45px;
 	border:1px solid lightgray;
 	border-radius:4px;
-	width:35%;
+	width:194px;
 }
 
-.aprasymas>div {
-	margin:20px;
+section>div:nth-child(2)>div>div>object{
+    background-color:#7dad41;
+    border-radius:25px;
 }
 
 ::placeholder {
@@ -92,33 +102,29 @@ form input[type="text"],input[type="email"] {
 }
 
 h1 {
+    font-size: 28px;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 h1 + p {
 	color:rgb(148, 147, 147);
 	font-size:11px;
+    margin-bottom: 12px;
 }
 
-.aprasymas div+p {
+section>div:nth-child(2) div+p {
 	font-size:11px;
 	color:rgb(148, 147, 147);
-	margin-left:20px;
-	margin-top:-10px;
 }
+
 input[type="submit"] {
 	color:white;
 	background-color:#7dad41;
 	border:2px solid #6c9639;
 	border-radius: 4px;
-	width: 36%;
-	height:30px;
+	padding: 10px 25px 10px 25px;
 }
 
-span{
-	font-size: 54px;
-}
-
-object {
-	margin-bottom:-20px;
+p {
+    margin-top:10px;
 }
