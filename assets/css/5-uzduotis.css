@@ -1,0 +1,132 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* mano kodas */
+
+section{
+    height:100vh;
+    background-image: url(../images/background.jpg);
+    background-position: top;
+    background-size: cover;
+   
+}
+section>div:first-child{
+    background-color: rgba(252, 252, 252, 0.626);
+    border-radius: 8px;
+    width:80%;
+    height:400px;
+    margin:0;
+    top:50%;
+    left:50%;
+    position:absolute;
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    font-size:0;
+}
+
+section>div>div:first-child{
+    width: 50%;
+    height:360px;
+    /* background-color: red; */
+    display: inline-block;
+    margin-top:20px;
+    box-sizing: border-box;
+    font-size:12px;
+    position:relative;
+}
+
+section>div>div:nth-child(2){
+    width: 50%;
+    height:360px;
+    display: inline-block;
+    /* background-color:orange; */
+    margin-top:20px;
+    font-size:12px;
+}
+
+section>div>div:first-child>div{
+    border-radius: 8px;
+    width: 80%;
+    height:360px;
+    display: inline-block;
+    background-color:rgb(92, 92, 227);
+    font-size:12px;
+    left:10%;
+    position:absolute;
+    font-size:16px;
+    overflow: hidden;
+
+}
+section>div>div:nth-child(2)>div{
+    border-radius: 8px;
+    width: 80%;
+    height:360px;
+    display: inline-block;
+    background-color:rgb(238, 98, 98);
+    font-size:12px;
+    margin-left:10%;
+    box-sizing: border-box;
+    font-size:16px;
+    overflow: hidden;
+}
+
+h2 {
+    padding-left:15px;
+    
+}
+
+p {
+    padding:15px;
+    
+}
+
+
+
+
+
