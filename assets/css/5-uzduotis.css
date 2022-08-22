@@ -48,6 +48,10 @@ table {
 }
 
 /* mano kodas */
+body,html{
+    padding:0;
+    margin:0
+}
 
 section{
     height:100vh;
