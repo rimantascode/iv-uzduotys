@@ -69,16 +69,6 @@ img{
     background-color: rgba(0, 0, 0, 0.475);
     width:100%;
     z-index: 2;
-    /* background: rgb(0,0,0);
-    background: linear-gradient(180deg, rgba(0,0,0,0.5) 50%, rgba(255,255,255,0.3) 100%); */
-/* 
-    background: rgb(255,255,255);
-    background: radial-gradient(circle, rgba(158,177,231,0.2) 1%, rgba(0,0,0,0.7) 78%); */
-/* 
-    background: rgb(251,251,255);
-    background: radial-gradient(circle, rgba(251,251,255,1) 0%, rgba(132,188,255,1) 94%); */
-
-
     background: rgb(89,89,255);
     background: radial-gradient(circle, rgba(89,89,255,0.1) 0%, rgba(0,0,0,1) 94%);
     
