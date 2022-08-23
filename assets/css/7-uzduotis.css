@@ -46,48 +46,69 @@ table {
 	border-spacing: 0;
 }
 /* mano kodas */
-html, body {
-    padding: 20px;
+body {
+    margin:0;
 }
+
 section>div:first-child{
-   /* background-color: red; */
+    width:80%;
+    margin: 0 auto;
+
    font-size:0;
 }
 section>div:nth-child(2){
-    /* background-color: red; */
     font-size:0;
-    margin-top: 40px;
+    width:80%;
+    margin:0 auto;
+    padding-top:80px;
  }
 
 section>div:first-child>div{
     display:inline-block;
     width:25%;
     font-size: 16px;
-    height:200px;
     box-sizing: border-box;
     padding: 10px;
 }
-p{
-    color:lightgray
+
+section>div:first-child p{
+    color:lightgray;
+}
+
+section>div:first-child h4 {
+    padding-top:10px;
+    padding-bottom: 10px;
+}
+
+section>div:first-child svg {
+    fill:#d0aa20;
+    
+}
+
+section>div:nth-child(2) p{
+    color:lightgray;
+    text-align:center;
 }
 
 section>div:first-child>div:first-child{
    display:inline-block;
 }
-svg {
-    fill:#dfc25b;
-    margin-top:0;
+
+section>div:nth-child(2) svg {
+    fill:#64d889;
+    margin:0 auto;
+    display:block;
 }
 
-h4 {
+section>div:nth-child(2) h4 {
     padding-top:10px;
-    padding-bottom: 10px;;
+    padding-bottom: 10px;
+    text-align: center;
 }
 section>div:nth-child(2)>div{
     display:inline-block;
     width:25%;
     font-size: 16px;
-    height:200px;
     box-sizing: border-box;
-    padding: 10px;;
 }
+
