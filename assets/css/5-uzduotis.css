@@ -4,7 +4,7 @@
 */
 
 html, body, div, span, applet, object, iframe,
-, h2, h3, h4, h5, h6, p, blockquote, pre,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
@@ -46,89 +46,63 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
 /* mano kodas */
-body,html{
-    padding:0;
-    margin:0
-}
 
-section{
-    height:100vh;
-    background-image: url(../images/background.jpg);
+body{
+    background-image: url("../images/background.jpg");
     background-position: top;
     background-size: cover;
-   
 }
-section>div:first-child{
+
+section>div{
     background-color: rgba(252, 252, 252, 0.626);
     border-radius: 8px;
     width:80%;
-    height:400px;
-    margin:0;
-    top:50%;
-    left:50%;
-    position:absolute;
-    -ms-transform: translate(-50%,-50%);
-    transform: translate(-50%,-50%);
+    box-sizing: border-box;
     font-size:0;
+    margin:0 auto;
+    margin-top:250px; 
+    padding:25px;
 }
 
-section>div>div:first-child{
-    width: 50%;
-    height:360px;
-    /* background-color: red; */
-    display: inline-block;
-    margin-top:20px;
-    box-sizing: border-box;
-    font-size:12px;
-    position:relative;
+section>div>div:first-child {
+    
+    display:inline-block;
+    width:50%;
 }
 
 section>div>div:nth-child(2){
-    width: 50%;
-    height:360px;
-    display: inline-block;
-    /* background-color:orange; */
-    margin-top:20px;
-    font-size:12px;
+    width:50%;
+    display:inline-block;
 }
 
-section>div>div:first-child>div{
+section>div>div:first-child>div {
+    width:80%;
+    display:block;
+    margin:0 auto;
+    background-color: red;
     border-radius: 8px;
-    width: 80%;
-    height:360px;
-    display: inline-block;
-    background-color:rgb(92, 92, 227);
-    font-size:12px;
-    left:10%;
-    position:absolute;
-    font-size:16px;
-    overflow: hidden;
-
 }
-section>div>div:nth-child(2)>div{
+
+section>div>div:nth-child(2)>div {
+    width:80%;
+    display: block;
+    margin:0 auto;
+    background-color: blue;
     border-radius: 8px;
-    width: 80%;
-    height:360px;
-    display: inline-block;
-    background-color:rgb(238, 98, 98);
-    font-size:12px;
-    margin-left:10%;
-    box-sizing: border-box;
-    font-size:16px;
-    overflow: hidden;
 }
 
 h2 {
-    padding-left:15px;
-    
+    font-size:20px;
+    padding:20px;
+    font-weight: bold;
 }
 
-p {
-    padding:15px;
-    
+p {    
+    font-size:16px;
+    padding: 20px;
 }
+
 
 
 
