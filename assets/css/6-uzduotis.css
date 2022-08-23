@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
+
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -48,95 +51,59 @@ table {
 }
 
 /* mano kodas */
-
-section>div>div:first-child {
+section{
+    background-image: url("../images/wood-header-background.jpg");
     height:100vh;
-    position:relative;
-}
 
-img{
-    width:100vw;
-    height:100vh;
-    z-index: 1;
-    position:relative;
-    object-fit: cover;
-    object-position: bottom;
 }
-
- section>div>div:first-child{ 
+section>div{
     height:100%;
-    position:absolute;
-    background-color: rgba(0, 0, 0, 0.475);
-    width:100%;
-    z-index: 2;
-    background: rgb(89,89,255);
-    background: radial-gradient(circle, rgba(89,89,255,0.1) 0%, rgba(0,0,0,1) 94%);
-    
+    background: rgba(13, 13, 14, 1);
+    background: radial-gradient(circle, rgb(0, 0, 0,0.2) 0%, rgba(0,0,0,0.9) 100%);
 }
-section>div>div:nth-child(3) {
+section>div>div{
     width:80%;
-    position:absolute;
-    top:40%;
-    left:50%;
-    font-size:16px;
-    color:white;
-    z-index: 5;
-    -ms-transform: translate(-50%,-50%);
-    transform: translate(-50%,-50%);
-    font-size:48px;
+    margin:0 auto;
+    padding-top: 38vh;
 }
+
 section>div>div:nth-child(3) p{
     font-size:18px;
     text-align:center;
-    /* margin-bottom: 25px; */
-
 }
 
 h1 {
     text-align:center;
-    margin-bottom:80px;
+    color:rgb(236, 236, 236);
+    font-size:45px;
+    margin-bottom:35px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Fredoka One', cursive;
+}
+
+p {
+    color:rgb(236, 236, 236);
+    text-align:center;
+    margin-bottom:35px;
 }
 
 input[type="submit"] {
-        padding: 9px;
-        margin-top:15px;
-        position: absolute;   
-        /* left: 203px;   */
-        /* top: 2px; */    
-        font-size: 20px;
-        background-color:rgb(15, 172, 237, 1);
-        color:rgb(0, 0, 0);
-        color:rgb(219, 219, 219);
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-weight:bolder;
-        /* border:1px solid red; */
-        margin-left:7px;
-        border-radius: 8px;
+     display:inline-block;
+     padding:13px;
+     border-radius: 6px;
+     background-color: #1b74e4;
+     color:white;
 }
+
 input[type="email"] {
     height:40px;
     background-color:rgb(219, 219, 219);
     width:240px;
     border-radius:6px;
-
+    display:inline-block;
 }
 
-section>div>div:nth-child(3) div {
-    border-radius:6px;
-    margin-top:50px;
-    height:74px;
-    width:476px;
-   position:absolute;
-   left:51%;
-   font-size:16px;
-   color:white;
-   z-index: 5;
-   -ms-transform: translateX(-51%);
-   transform: translateX(-51%);
-   font-size:48px;
-   background-color:rgba(0, 0, 0, 0.494);
-   margin-bottom: 40px;
-}
+
 section>div>div:nth-child(3) p:last-child{
     margin-top:50px;
     font-size: 14px;
@@ -144,5 +111,17 @@ section>div>div:nth-child(3) p:last-child{
 }
 
 form {
-    margin-left:16px;
+    margin:0 auto;
+    width:372px;
+    padding:10px;
+    background-color:rgba(0,0,0,0.5);
+    border-radius:6px;
 } 
+form + p {
+    margin-top:35px;
+    color:rgb(236, 236, 236);
+}
+
+::placeholder{
+    padding-left:10px;
+}
