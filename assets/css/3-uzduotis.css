@@ -50,35 +50,19 @@ table {
 /* mano kodas */
 
 section {
-	width: 100%;
     font-size:0;
-    height: 500px;
-    position:relative;
+	height: 100vh;
+}
+img{
+	display:inline-block;
+	width:50%;
 }
 
-section>div:first-child {
-	width: 50%;
-	display: inline-block;
-}
-
-section>div:nth-child(2)>div:first-child{
-    margin-left:15px;
-} 
-
-img {
-   width:100%;
-    height:500px;
-   object-fit:cover;
-}
-
-section>div:nth-child(2){
+section>div{
     width:50%;
     display: inline-block;
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);  
+	padding-left:25px;
+	box-sizing:border-box;
 }
 
 
@@ -88,11 +72,6 @@ form input[type="text"], input[type="email"] {
 	border:1px solid lightgray;
 	border-radius:4px;
 	width:194px;
-}
-
-section>div:nth-child(2)>div>div>object{
-    background-color:#7dad41;
-    border-radius:25px;
 }
 
 ::placeholder {
@@ -127,4 +106,9 @@ input[type="submit"] {
 
 p {
     margin-top:10px;
+	font-size:11px;
+	color:#949393;
 }
+
+
+

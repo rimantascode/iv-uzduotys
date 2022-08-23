@@ -135,6 +135,7 @@ section>div:first-child a {
     display: inline-block;
     padding:15px;
     margin-bottom:15px;
+    font-weight:bold;
   }
 
 section>div:last-child a {
@@ -146,6 +147,7 @@ section>div:last-child a {
   display: inline-block;
   padding:15px;
   margin-bottom:15px;
+  font-weight:bold;
 }
 
 a {
