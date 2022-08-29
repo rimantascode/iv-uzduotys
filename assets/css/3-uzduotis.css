@@ -51,7 +51,7 @@ table {
 
 section {
     font-size:0;
-	height: 100vh;
+	/* height: 100vh; */
 }
 img{
 	display:inline-block;
@@ -110,5 +110,8 @@ p {
 	color:#949393;
 }
 
-
+section>div {
+	vertical-align: top;
+	
+}
 
