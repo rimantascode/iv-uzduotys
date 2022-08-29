@@ -58,67 +58,96 @@ section {
 
 section>div{
     height:100vh;
-    background: rgba(0, 0, 0, 0.638)
+    background: rgba(0, 0, 0, 0.767)
 }
 
 section>div>div div{
     font-size:0;
-    background-color: green;
 }
 
-
-section>div div {
-    display:inline-block;
-    width:50%;
-    font-size:16px;
-    background-color: red;
-}
-
-small{
-    font-size:10px;
+section>div>div:first-child>div form + p{
+    font-size:14px;
     color:lightgrey;
     font-weight: lighter;
+    padding-left:15%;
 }
 
-.test {
-    background-color: green;
-    width:80%;
-    margin:0 auto;
-    display: block;
+section>div div{
+    width:75%;
     font-size:0;
-    padding-top:35vh;
+    padding-top:calc((100vh - 281px)/2);
+    margin:0 auto;
 }
 
-.aprasymas {
-    background-color: red;
+section>div>div div {
     display: inline-block;
-    width:50%;
+    width:65%;
+   vertical-align:top;
+   padding-top:15px;
 }
 
-h1 {
-    font-size:35px;
+section>div>div p {
+    font-size: 16px;
+    width:95%;
+    color:#d6d6d6f7;
+}
+
+h1{
+    font-size:55px;
+    font-weight:bolder;
+    color:#edededf7;
+    padding:20px;
+    padding-left:0;   
+    margin-top:50px;
 }
 
 form {
-    width:45%;
-    margin:0 auto;
+    width:100%;
     box-sizing: border-box;
+    padding-left:15%;
 }
 
 input {
     width:100%;
     padding:0;
-    margin:0;
+    margin-bottom:10px;
     box-sizing: border-box;
+}
+
+input[type="text"], input[type="email"]{
+    padding:15px 0 15px 0;
+    background-color:#edededf7;
+    border:1px solid black !important;
+    border-radius: 3px;
 }
 
 textarea{
   width:100%;
   box-sizing: border-box;
+  padding: 40px 0 40px 0;
+  margin-bottom: 10px;
+  background-color:#edededf7;
+  border-radius: 3px;
 }
 
-.formai {
+section>div>div>div:nth-child(2) {
     display:inline-block;
-    width:50%;
+    width:35%;
     box-sizing: border-box;
+    padding:0;
+}
+
+input[type="submit"]{
+    padding:15px 0 15px 0;
+    background-color: #f77924;
+    border:1px solid #af561a;
+    color:#edededf7;
+    border-radius: 3px;
+}
+
+::placeholder {
+    padding-left:10px;
+    font-size:14px;
+    font-weight: lighter;
+    color:rgb(71, 62, 62);
 }

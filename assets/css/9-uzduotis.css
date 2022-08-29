@@ -49,25 +49,21 @@ table {
 
 /* mano kodas */
 
-header{
+section{
     height:100vh;
    background-image: url('../images/family-ticket.jpg');
    background-position: center;
    background-size: cover;
-   z-index:1;
 }
-header>div:first-child {
+section>div{
     width:100%;
     height:100vh;
     background-color: rgb(0, 0, 0, 0.75);
-    position: absolute;
 }
 
-header>div:nth-child(2){
-    z-index: 5;
-    position:absolute;
-    top:15%;
-    left:10%;
+section>div div{
+    padding-top:150px;   
+    padding-left:100px;
 }
 
 h1 {
@@ -76,13 +72,16 @@ h1 {
     text-transform: uppercase;
     font-weight: bold;
 }
+
 p {
-    margin-top:25px;
+    /* margin-top:25px; */
+    padding-top:35px;
     font-weight: light;
     font-size:16px;
     font-family:monospace;
-    color:#f0f0f0;
+    color:#f0f0f0c7;
     width:80%;
+    margin-bottom: 35px;
 }
 
 a{
@@ -90,8 +89,7 @@ a{
     background-color: #f87824;
     border-radius: 4px;
     color:#f0f0f0;
-    position: absolute;
-    top:200px;
     text-decoration: none;
-    border:1px solid #d75d0c;
+    /* border:1px solid #d75d0c; */
+    margin-left: 100px;;
 }
