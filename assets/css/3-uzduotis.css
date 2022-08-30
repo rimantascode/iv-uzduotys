@@ -56,6 +56,8 @@ section {
 img{
 	display:inline-block;
 	width:50%;
+	height:100vh;
+	object-fit: cover;
 }
 
 section>div{
@@ -63,15 +65,19 @@ section>div{
     display: inline-block;
 	padding-left:25px;
 	box-sizing:border-box;
+	vertical-align: top;
+	margin-top:calc((100vh - 490.391px) /2) 
 }
 
 
 form input[type="text"], input[type="email"] {
 	margin:5px 0 5px 0;
-	height:45px;
+	padding-top:15px;
+	padding-bottom: 15px;
 	border:1px solid lightgray;
 	border-radius:4px;
-	width:194px;
+	width:50%;
+	box-sizing: border-box;
 }
 
 ::placeholder {
@@ -81,7 +87,7 @@ form input[type="text"], input[type="email"] {
 }
 
 h1 {
-    font-size: 28px;
+    font-size: 40px;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -101,17 +107,13 @@ input[type="submit"] {
 	background-color:#7dad41;
 	border:2px solid #6c9639;
 	border-radius: 4px;
-	padding: 10px 25px 10px 25px;
+	padding: 15px 15px ;
+	width:50%;
 }
 
 p {
     margin-top:10px;
 	font-size:11px;
 	color:#949393;
-}
-
-section>div {
-	vertical-align: top;
-	
 }
 
