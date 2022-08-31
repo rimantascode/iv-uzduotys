@@ -280,3 +280,182 @@ header > ul {
 .last-il {
   margin: 0;
 }
+
+.container {
+  padding-top: 91px;
+  width: 62%;
+  margin: 0 auto;
+  background-color: $body-primary-color;
+  h3 {
+    text-align: center;
+    font-family: $font-family-2;
+    font-weight: $font-weight-bold;
+    font-size: 24px;
+    margin-bottom: 23px;
+  }
+
+  h4 {
+    text-align: center;
+    margin-bottom: 23px;
+  }
+  .skirtukas {
+    border-top: 3px solid red;
+    width: 60px;
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+
+  p {
+    width: 62%;
+    text-align: center;
+    font-family: $font-family-3;
+    font-weight: $font-weight-regular;
+    color: $paragraph-primary-color;
+    margin: 0 auto;
+    margin-top: 43px;
+  }
+
+  ul {
+    margin-top: 100px;
+    font-size: 0;
+    li {
+      width: 30%;
+    }
+
+    li:first-child {
+      display: inline-block;
+      margin-right: 5%;
+    }
+
+    li:nth-child(2) {
+      display: inline-block;
+      margin-right: 5%;
+    }
+
+    li:nth-child(3) {
+      display: inline-block;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+    .sumazinti {
+      max-height: 200px;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+// .images {
+//   margin-bottom: 110px;
+// }
+
+.container-numbers {
+  margin-top: 110px;
+  height: 270px;
+  background-color: #95e1d3;
+  ul {
+    width: 62%;
+    margin: 0 auto;
+    font-size: 0;
+    display: block;
+  }
+
+  li {
+    font-size: 14px;
+    display: inline-block;
+    height: 270px;
+    width: 20%;
+    border: 1px solid $body-primary-color;
+    box-sizing: border-box;
+    padding-top: calc((270px - 101px) / 2);
+    text-align: center;
+  }
+
+  .number {
+    font-size: $font-size-72;
+    font-family: $font-family-1;
+    font-weight: $font-weight-bold;
+    color: $body-primary-color;
+    display: block;
+  }
+
+  .text {
+    font-size: $font-size-14;
+    font-weight: $font-weight-regular;
+    color: $body-primary-color;
+    display: block;
+  }
+  .text {
+    padding-top: 15px;
+  }
+}
+
+.a-services {
+  padding-top: 91px;
+  width: 62%;
+  margin: 0 auto;
+  background-color: $body-primary-color;
+  h3 {
+    text-align: center;
+    font-family: $font-family-2;
+    font-weight: $font-weight-bold;
+    font-size: 24px;
+    margin-bottom: 23px;
+  }
+
+  h4 {
+    text-align: center;
+    margin-bottom: 23px;
+  }
+  .skirtukas {
+    border-top: 3px solid red;
+    width: 60px;
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+
+  p {
+    width: 62%;
+    text-align: center;
+    font-family: $font-family-3;
+    font-weight: $font-weight-regular;
+    color: $paragraph-primary-color;
+    margin: 0 auto;
+    margin-top: 43px;
+  }
+  :nth-child(5) {
+    background-color: red;
+    font-size: 0;
+  }
+  :nth-child(5) div {
+    border: 1px solid red;
+    display: inline-block;
+    width: 33%;
+  }
+
+  :nth-child(5) > div:first-child img {
+    padding-top: 1px;
+  }
+  h5 {
+    font-size: 14px;
+    text-align: center;
+    background-color: green;
+    display: inline-block;
+  }
+
+  p.description {
+    font-size: 14px;
+    color: white;
+  }
+  div.icons {
+    display: inline-block;
+    width: 34px;
+    height: 100%;
+    border: 1px solid white;
+    vertical-align: top;
+  }
+}
