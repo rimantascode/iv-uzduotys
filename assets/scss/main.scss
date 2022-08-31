@@ -419,7 +419,6 @@ header > ul {
   }
 
   p {
-    width: 62%;
     text-align: center;
     font-family: $font-family-3;
     font-weight: $font-weight-regular;
@@ -428,7 +427,7 @@ header > ul {
     margin-top: 43px;
   }
   :nth-child(5) {
-    background-color: red;
+    // background-color: red;
     font-size: 0;
   }
   :nth-child(5) div {
@@ -440,22 +439,41 @@ header > ul {
   :nth-child(5) > div:first-child img {
     padding-top: 1px;
   }
+
   h5 {
     font-size: 14px;
-    text-align: center;
-    background-color: green;
+    text-align: left;
+    // background-color: green;
     display: inline-block;
+    width: 80%;
+    margin-left: 6%;
+    font-weight: $font-weight-regular;
+    color: $color-secondary-dark;
   }
 
   p.description {
     font-size: 14px;
-    color: white;
+    color: $color-secondary-light-dark;
+    width: 86%;
+    margin-top: -5px;
+    text-align: left;
+    margin-right: 5px;
+    margin-left: 18%;
   }
+
   div.icons {
     display: inline-block;
     width: 34px;
     height: 100%;
     border: 1px solid white;
     vertical-align: top;
+    width: 12%;
+    box-sizing: border-box;
+  }
+
+  div.main {
+    border: 1px solid white;
+    // width: 100%;
+    font-size: 0;
   }
 }

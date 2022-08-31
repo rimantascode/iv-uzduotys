@@ -392,7 +392,6 @@ header > ul a {
   margin-top: 40px;
 }
 .a-services p {
-  width: 62%;
   text-align: center;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -401,7 +400,6 @@ header > ul a {
   margin-top: 43px;
 }
 .a-services :nth-child(5) {
-  background-color: red;
   font-size: 0;
 }
 .a-services :nth-child(5) div {
@@ -414,13 +412,21 @@ header > ul a {
 }
 .a-services h5 {
   font-size: 14px;
-  text-align: center;
-  background-color: green;
+  text-align: left;
   display: inline-block;
+  width: 80%;
+  margin-left: 6%;
+  font-weight: 400;
+  color: #333333;
 }
 .a-services p.description {
   font-size: 14px;
-  color: white;
+  color: #999999;
+  width: 86%;
+  margin-top: -5px;
+  text-align: left;
+  margin-right: 5px;
+  margin-left: 18%;
 }
 .a-services div.icons {
   display: inline-block;
@@ -428,4 +434,11 @@ header > ul a {
   height: 100%;
   border: 1px solid white;
   vertical-align: top;
+  width: 12%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.a-services div.main {
+  border: 1px solid white;
+  font-size: 0;
 }/*# sourceMappingURL=main.css.map */
