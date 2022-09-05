@@ -541,7 +541,6 @@ section.main-container .pics > div img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  height: auto;
 }
 section.main-container .pics > div:nth-child(2) {
   display: inline-block;
@@ -586,24 +585,27 @@ section.queate {
   background-color: #f8f8f8;
 }
 section.queate .main-div {
-  width: 62%;
+  width: 50%;
   margin: 0 auto;
   font-size: 0;
 }
 section.queate blockquote {
-  width: 92%;
+  width: 88%;
   display: inline-block;
-  font-size: 14px;
+  font-size: 24px;
   vertical-align: middle;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-style: italic;
+  padding: 25px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 section.queate img {
   display: inline-block;
-  width: 8%;
+  width: 12%;
   vertical-align: middle;
-  border: 1px solid red;
+  border: 2px solid #95e1d3;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 15px;
