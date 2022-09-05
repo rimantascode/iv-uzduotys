@@ -297,6 +297,9 @@ header > ul {
   h4 {
     text-align: center;
     margin-bottom: 23px;
+    font-size: 30px;
+    font-family: $font-family-1;
+    font-weight: $font-weight-bold;
   }
   .skirtukas {
     border-top: 3px solid red;
@@ -402,7 +405,7 @@ header > ul {
   h3 {
     text-align: center;
     font-family: $font-family-2;
-    font-weight: $font-weight-bold;
+    font-weight: $font-weight-regular;
     font-size: 24px;
     margin-bottom: 23px;
   }
@@ -410,7 +413,11 @@ header > ul {
   h4 {
     text-align: center;
     margin-bottom: 23px;
+    font-size: 30px !important;
+    font-family: $font-family-1 !important;
+    font-weight: $font-weight-bold;
   }
+
   .skirtukas {
     border-top: 3px solid red;
     width: 60px;
@@ -433,7 +440,7 @@ header > ul {
   :nth-child(5) div {
     border: 1px solid red;
     display: inline-block;
-    width: 33%;
+    width: 33.33%;
   }
 
   :nth-child(5) > div:first-child img {
@@ -471,9 +478,13 @@ header > ul {
     box-sizing: border-box;
   }
 
-  div.main {
+  div .main {
     border: 1px solid white;
     // width: 100%;
     font-size: 0;
+  }
+
+  .main .bottom {
+    border-bottom: 1px solid red;
   }
 }
