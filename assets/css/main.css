@@ -282,6 +282,9 @@ header > ul a {
 .container h4 {
   text-align: center;
   margin-bottom: 23px;
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
 }
 .container .skirtukas {
   border-top: 3px solid red;
@@ -377,19 +380,16 @@ header > ul a {
 .a-services h3 {
   text-align: center;
   font-family: "Kaushan Script", cursive;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 24px;
   margin-bottom: 23px;
 }
 .a-services h4 {
   text-align: center;
   margin-bottom: 23px;
-}
-.a-services .skirtukas {
-  border-top: 3px solid red;
-  width: 60px;
-  margin: 0 auto;
-  margin-top: 40px;
+  font-size: 30px !important;
+  font-family: "Montserrat", sans-serif !important;
+  font-weight: 700;
 }
 .a-services p {
   text-align: center;
@@ -401,11 +401,27 @@ header > ul a {
 }
 .a-services :nth-child(5) {
   font-size: 0;
+  margin-top: 61px;
 }
 .a-services :nth-child(5) div {
-  border: 1px solid red;
   display: inline-block;
-  width: 33%;
+  width: 33.33%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.a-services :nth-child(7) {
+  display: inline-block;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 0;
+}
+.a-services :nth-child(7) div {
+  display: inline-block;
+  width: 33.33%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 0;
 }
 .a-services :nth-child(5) > div:first-child img {
   padding-top: 1px;
@@ -435,10 +451,58 @@ header > ul a {
   border: 1px solid white;
   vertical-align: top;
   width: 12%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
-.a-services div.main {
-  border: 1px solid white;
-  font-size: 0;
+.a-services .atskirti {
+  border-top: 1px solid #999999;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.unique-design {
+  background-image: url("../images/mogo/gray-background.png");
+  padding-top: 91px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  margin-top: 91px;
+}
+.unique-design h3 {
+  text-align: center;
+  font-family: "Kaushan Script", cursive;
+  font-weight: 400;
+  font-size: 24px;
+  margin-bottom: 23px;
+}
+.unique-design h4 {
+  text-align: center;
+  margin-bottom: 23px;
+  font-size: 30px !important;
+  font-family: "Montserrat", sans-serif !important;
+  font-weight: 700;
+}
+.unique-design .display-images {
+  position: relative;
+  width: 62%;
+  margin: 0 auto;
+}
+.unique-design img.tablet {
+  margin-top: 40px;
+  display: block;
+  border-top-left-radius: 32px;
+  border-top-right-radius: 32px;
+  margin: 0 auto;
+  margin-left: 15%;
+}
+.unique-design img.phone {
+  position: absolute;
+  right: 15%;
+  bottom: -45px;
+  border-radius: 27px;
+}
+
+.skirtukas {
+  border-top: 3px solid red;
+  width: 60px;
+  margin: 0 auto;
+  margin-top: 40px;
 }/*# sourceMappingURL=main.css.map */
