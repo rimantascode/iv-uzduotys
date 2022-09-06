@@ -583,37 +583,57 @@ section.main-container .pics > div:nth-child(2) p {
 section.queate {
   width: 100%;
   background-color: #f8f8f8;
+  margin-top: 119px;
 }
 section.queate .main-div {
   width: 50%;
   margin: 0 auto;
   font-size: 0;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 section.queate blockquote {
-  width: 88%;
+  width: 82%;
   display: inline-block;
   font-size: 24px;
   vertical-align: middle;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-style: italic;
-  padding: 25px;
+  padding-left: 34px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+section.queate div > div:first-child {
+  display: inline-block;
+  border: 3px solid #95e1d3;
+  width: 18%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 section.queate img {
   display: inline-block;
-  width: 12%;
+  width: 42px;
+  height: 40px;
   vertical-align: middle;
-  border: 2px solid #95e1d3;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 15px;
+  margin: 34px;
 }
 section.queate hr {
   border-top: 3px solid red;
-  width: 35px;
-  text-align: left;
+  width: 60px;
+  margin-left: 0px;
+  display: inline-block;
+  vertical-align: middle;
+}
+section.queate span {
+  display: inline-block;
+  margin-left: 15px;
+  margin-top: 12px;
+  font-family: "Kaushan Script", cursive;
+  font-weight: 400;
+  font-size: 24px;
 }
 
 .who-we-are {
@@ -642,4 +662,143 @@ section.queate hr {
   margin-top: 40px;
   margin-bottom: 91px;
   text-align: center;
+}
+.who-we-are ul {
+  margin-top: 100px;
+  font-size: 0;
+}
+.who-we-are ul li {
+  width: 30%;
+}
+.who-we-are ul li:first-child {
+  display: inline-block;
+  margin-right: 5%;
+}
+.who-we-are ul li:nth-child(2) {
+  display: inline-block;
+  margin-right: 5%;
+}
+.who-we-are ul li:nth-child(3) {
+  display: inline-block;
+}
+.who-we-are ul img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.who-we-are ul span {
+  display: block;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: #333333;
+  text-align: center;
+  width: 100%;
+  margin-top: 10px;
+}
+.who-we-are ul li span:nth-child(3) {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  color: #999999;
+  font-style: italic;
+}
+
+.brands {
+  width: 100%;
+  background-color: #f8f8f8;
+  margin-top: 91px;
+}
+.brands img {
+  display: block;
+  width: 62%;
+  margin: 0 auto;
+}
+
+.some-of-our-work {
+  width: 62%;
+  margin: 0 auto;
+  margin-top: 91px;
+}
+.some-of-our-work h3 {
+  text-align: center;
+  font-family: "Kaushan Script", cursive;
+  font-weight: 400;
+  font-size: 24px;
+  margin-bottom: 23px;
+}
+.some-of-our-work h4 {
+  text-align: center;
+  margin-bottom: 23px;
+  font-size: 30px !important;
+  font-family: "Montserrat", sans-serif !important;
+  font-weight: 700;
+}
+.some-of-our-work p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  margin-top: 40px;
+  margin-bottom: 91px;
+  text-align: center;
+}
+
+.gallery {
+  width: 100%;
+  font-size: 0;
+}
+.gallery .kaire {
+  width: 50%;
+  display: inline-block;
+  height: 25vh;
+  background-color: red;
+}
+.gallery .kaire :first-child {
+  width: 50%;
+  background-color: wheat;
+  height: 25vh;
+  display: inline-block;
+}
+.gallery .kaire :nth-child(2) {
+  width: 50%;
+  background-color: orange;
+  height: 25vh;
+  display: inline-block;
+}
+.gallery .kaire :nth-child(3) {
+  width: 50%;
+  background-color: gray;
+  height: 25vh;
+  display: inline-block;
+}
+.gallery .kaire :nth-child(4) {
+  width: 50%;
+  background-color: teal;
+  height: 25vh;
+  display: inline-block;
+}
+.gallery .visas {
+  width: 25%;
+  height: 50vh;
+  display: inline-block;
+  background-color: black;
+  vertical-align: middle;
+}
+.gallery .desine {
+  background-color: green;
+  width: 25%;
+  display: inline-block;
+}
+.gallery .desine :first-child {
+  background-color: lightblue;
+  width: 100%;
+  height: 25vh;
+  display: block;
+}
+.gallery .desine :nth-child(2) {
+  background-color: violet;
+  width: 100%;
+  height: 25vh;
+  display: block;
 }/*# sourceMappingURL=main.css.map */
