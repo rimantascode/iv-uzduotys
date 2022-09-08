@@ -502,7 +502,7 @@ header > ul a {
 }
 
 .skirtukas {
-  border-top: 3px solid red;
+  border-top: 3px solid #f38181;
   width: 60px;
   margin: 0 auto;
   margin-top: 40px;
@@ -1112,4 +1112,31 @@ section.queate span {
   font-style: italic;
   font-weight: 300;
   color: white;
+}
+
+.map {
+  width: 100%;
+  background-image: url("../images/mogo/map-bg.jpg");
+}
+.map img {
+  margin: 0 auto;
+  display: block;
+}
+.map a {
+  text-align: center;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+}
+.map a span {
+  display: block;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  color: #f38181;
+}
+.map .skirtukas {
+  margin: 0 auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }/*# sourceMappingURL=main.css.map */
