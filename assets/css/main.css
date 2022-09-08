@@ -492,11 +492,11 @@ header > ul a {
   display: block;
   border-top-left-radius: 32px;
   border-top-right-radius: 32px;
-  margin-left: 5vw;
+  margin: 0 auto;
 }
 .unique-design img.phone {
   position: absolute;
-  right: 5%;
+  right: 20%;
   bottom: -45px;
   border-radius: 27px;
 }
