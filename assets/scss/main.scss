@@ -730,6 +730,30 @@ section.queate {
     li {
       width: 30%;
     }
+    li img {
+      z-index: 0;
+    }
+
+    .square {
+      position: relative;
+      background: red;
+    }
+
+    .square:before {
+      content: "";
+      display: block;
+      position: absolute;
+      height: 0%;
+      width: 100%;
+      bottom: 0;
+      transition: height 0.5s ease-out;
+      background: rgb(242, 219, 139);
+      background: linear-gradient(0deg, rgba(242, 219, 139, 0.8) 0%, rgba(238, 137, 137, 0.7) 100%);
+    }
+    .square:hover:before {
+      z-index: 2;
+      height: 100%;
+    }
 
     li:first-child {
       display: inline-block;
@@ -829,9 +853,25 @@ section.queate {
       display: inline-block;
       cursor: pointer;
     }
-    :first-child:hover {
-      opacity: 0.3;
+    .square {
+      position: relative;
     }
+
+    .square:before {
+      content: "";
+      display: block;
+      position: absolute;
+      height: 0%;
+      width: 100%;
+      bottom: 0px;
+      transition: height 0.5s ease-out;
+      background: rgb(242, 219, 139);
+      background: linear-gradient(0deg, rgba(242, 219, 139, 0.8) 0%, rgba(238, 137, 137, 0.7) 100%);
+    }
+    .square:hover:before {
+      height: 100%;
+    }
+
     :nth-child(2) {
       background-image: url("../images/mogo/gallery-bridge.jpg");
       background-position: bottom;
@@ -842,9 +882,6 @@ section.queate {
       display: inline-block;
     }
 
-    :nth-child(2):hover {
-      opacity: 0.8;
-    }
     :nth-child(3) {
       background-image: url("../images/mogo/gallery-water-bridge.jpg");
       background-position: center;

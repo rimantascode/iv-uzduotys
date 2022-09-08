@@ -677,6 +677,30 @@ section.queate span {
 .who-we-are ul li {
   width: 30%;
 }
+.who-we-are ul li img {
+  z-index: 0;
+}
+.who-we-are ul .square {
+  position: relative;
+  background: red;
+}
+.who-we-are ul .square:before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 0%;
+  width: 100%;
+  bottom: 0;
+  -webkit-transition: height 0.5s ease-out;
+  transition: height 0.5s ease-out;
+  background: rgb(242, 219, 139);
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(242, 219, 139, 0.8)), to(rgba(238, 137, 137, 0.7)));
+  background: linear-gradient(0deg, rgba(242, 219, 139, 0.8) 0%, rgba(238, 137, 137, 0.7) 100%);
+}
+.who-we-are ul .square:hover:before {
+  z-index: 2;
+  height: 100%;
+}
 .who-we-are ul li:first-child {
   display: inline-block;
   margin-right: 5%;
@@ -770,8 +794,24 @@ section.queate span {
   display: inline-block;
   cursor: pointer;
 }
-.gallery .kaire :first-child:hover {
-  opacity: 0.3;
+.gallery .kaire .square {
+  position: relative;
+}
+.gallery .kaire .square:before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 0%;
+  width: 100%;
+  bottom: 0px;
+  -webkit-transition: height 0.5s ease-out;
+  transition: height 0.5s ease-out;
+  background: rgb(242, 219, 139);
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(242, 219, 139, 0.8)), to(rgba(238, 137, 137, 0.7)));
+  background: linear-gradient(0deg, rgba(242, 219, 139, 0.8) 0%, rgba(238, 137, 137, 0.7) 100%);
+}
+.gallery .kaire .square:hover:before {
+  height: 100%;
 }
 .gallery .kaire :nth-child(2) {
   background-image: url("../images/mogo/gallery-bridge.jpg");
@@ -781,9 +821,6 @@ section.queate span {
   background-color: orange;
   height: 25vw;
   display: inline-block;
-}
-.gallery .kaire :nth-child(2):hover {
-  opacity: 0.8;
 }
 .gallery .kaire :nth-child(3) {
   background-image: url("../images/mogo/gallery-water-bridge.jpg");
