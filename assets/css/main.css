@@ -895,51 +895,88 @@ section.queate span {
   width: 100%;
   height: auto;
   background-image: url("../images/mogo/mountain-background.jpg");
+  padding-top: 91px;
+  padding-bottom: 91px;
 }
-.testimonials :first-child {
-  font-size: 0;
+.testimonials h3 {
+  text-align: center;
+  font-family: "Kaushan Script", cursive;
+  font-weight: 400;
+  font-size: 24px;
+  margin-bottom: 23px;
+}
+.testimonials h4 {
+  text-align: center;
+  margin-bottom: 23px;
+  font-size: 30px !important;
+  font-family: "Montserrat", sans-serif !important;
+  font-weight: 700;
+}
+.testimonials p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  margin-top: 40px;
+  margin-bottom: 91px;
+  text-align: center;
+}
+.testimonials .main-div-for-tesimonials {
   width: 62%;
   margin: 0 auto;
 }
-.testimonials :first-child > div {
-  width: 50%;
-  display: inline-block;
-}
-.testimonials :first-child > :first-child > div {
-  width: 100%;
-  margin-bottom: 5vh;
-  font-size: 0;
-}
-.testimonials :first-child > :first-child > div h6 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  color: #333333;
-  margin: 0;
-}
-.testimonials :first-child > :nth-child(2) > div {
-  width: 100%;
-  margin-bottom: 10vh;
-  font-size: 0;
-}
-.testimonials :first-child > :nth-child(2) > div h6 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  color: #333333;
-  margin: 0;
-}
-.testimonials :nth-child(2) > div {
-  display: inline-block;
-  width: 50%;
-  font-size: 12px;
-}
-.testimonials .p-aprasymas {
+.testimonials .main-div-for-tesimonials .p-aprasymas {
   width: 95%;
   font-family: "Roboto", sans-serif;
   font-size: 15px;
   font-weight: 400;
   color: #999999;
+  text-align: left;
+  margin: 0;
+}
+.testimonials .main-div-for-tesimonials h6 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #333333;
+  margin: 0;
+}
+.testimonials .main-div-for-tesimonials span {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  color: #333333;
+  font-size: 15px;
+}
+.testimonials .main-div-for-tesimonials .testi {
+  margin-left: 0;
+  margin: 15px 0 15px;
+}
+.testimonials .top-block {
+  font-size: 0;
+  margin-bottom: 40px;
+}
+.testimonials .top-block > div:first-child {
+  width: 50%;
+  display: inline-block;
+}
+.testimonials .top-block > div:nth-child(2) {
+  width: 50%;
+  display: inline-block;
+}
+.testimonials .top-block > div:nth-child(2) img {
+  -o-object-position: bottom;
+     object-position: bottom;
+}
+.testimonials .bottom-block {
+  font-size: 0;
+}
+.testimonials .bottom-block > div:first-child {
+  width: 50%;
+  display: inline-block;
+}
+.testimonials .bottom-block > div:nth-child(2) {
+  width: 50%;
+  display: inline-block;
 }
 .testimonials img {
   width: 80px !important;
@@ -950,17 +987,129 @@ section.queate span {
   display: inline-block !important;
 }
 .testimonials .testi-pic {
-  width: 25% !important;
+  width: auto;
   display: inline-block;
 }
 .testimonials .testi-descr {
   width: 75% !important;
   display: inline-block;
+  margin-left: 25px;
 }
-.testimonials span {
+
+.universal-container {
+  padding-top: 91px;
+  padding-bottom: 91px;
+  width: 62%;
+  margin: 0 auto;
+}
+.universal-container h3 {
+  text-align: center;
+  font-family: "Kaushan Script", cursive;
+  font-weight: 400;
+  font-size: 24px;
+  margin-bottom: 23px;
+}
+.universal-container h4 {
+  text-align: center;
+  margin-bottom: 23px;
+  font-size: 30px !important;
+  font-family: "Montserrat", sans-serif !important;
+  font-weight: 700;
+}
+.universal-container p {
   font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-style: italic;
-  color: #333333;
+  font-weight: 400;
   font-size: 15px;
+  margin-top: 40px;
+  margin-bottom: 91px;
+  text-align: center;
+}
+.universal-container ul {
+  margin-top: 100px;
+  font-size: 0;
+}
+.universal-container ul li {
+  width: 30%;
+}
+.universal-container ul li:first-child {
+  display: inline-block;
+  margin-right: 5%;
+  position: relative;
+}
+.universal-container ul li:nth-child(2) {
+  display: inline-block;
+  margin-right: 5%;
+  position: relative;
+}
+.universal-container ul li:nth-child(3) {
+  display: inline-block;
+  position: relative;
+}
+.universal-container ul img.big {
+  width: 100%;
+  height: auto;
+}
+.universal-container ul span.name {
+  display: block;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: #333333;
+  text-align: center;
+  width: 100%;
+  margin: 15px 0 15px;
+}
+.universal-container ul li span:nth-child(4) {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: #999999;
+  font-style: italic;
+}
+.universal-container ul img.little-img {
+  width: auto;
+  height: auto;
+  display: inline;
+  margin-right: 10px;
+  vertical-align: top;
+}
+.universal-container ul .chat {
+  height: 14px !important;
+}
+.universal-container ul hr {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border: 1px solid #e5e5e5;
+}
+.universal-container ul .nr {
+  display: inline !important;
+  margin-right: 10px;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-style: italic;
+  color: #999999;
+}
+.universal-container ul .label {
+  background-color: #95e1d3;
+  width: auto;
+  padding: 14px;
+  position: absolute;
+  bottom: 150px;
+  left: -10px;
+}
+.universal-container ul .label span {
+  display: block;
+  font-size: 30px;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  line-height: 30px;
+  margin-top: 0;
+}
+.universal-container ul .label small {
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-weight: 300;
+  color: white;
 }/*# sourceMappingURL=main.css.map */
