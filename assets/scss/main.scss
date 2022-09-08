@@ -147,7 +147,15 @@ header {
   background-image: url(../images/mogo/erelis-background.jpg);
   background-position: center;
   background-size: cover;
-
+  .skirtukas {
+    margin: 0 auto;
+    display: block !important;
+    text-align: center;
+    width: 60px;
+    // border: 1px solid red;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
   div {
     width: 62%;
     margin: 0 auto;
@@ -527,12 +535,12 @@ header > ul {
     display: block;
     border-top-left-radius: 32px;
     border-top-right-radius: 32px;
-    margin: 0 auto;
-    margin-left: 15%;
+    // margin: 0 auto;
+    margin-left: 5vw;
   }
   img.phone {
     position: absolute;
-    right: 15%;
+    right: 5%;
     bottom: -45px;
     border-radius: 27px;
   }
