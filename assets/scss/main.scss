@@ -835,114 +835,215 @@ section.queate {
   }
 }
 
-.gallery {
-  width: 100%;
-  font-size: 0;
-  .kaire {
-    width: 50%;
-    display: inline-block;
-    height: 25vw;
+.bg {
+  position: absolute;
+  width: 100% !important;
 
-    :first-child {
-      background-image: url("../images/mogo/gallery-beach.jpg");
-      background-position: bottom;
-      background-size: cover;
-      width: 50%;
-      background-color: wheat;
-      height: 25vw;
-      display: inline-block;
-      cursor: pointer;
-    }
-    .square {
-      position: relative;
-    }
+  background: rgb(242, 219, 139);
+  background: linear-gradient(0deg, rgba(242, 219, 139, 0.8) 0%, rgba(238, 137, 137, 0.7) 100%);
+  left: 0;
+  z-index: 1;
+  opacity: 0;
 
-    .square:before {
-      content: "";
-      display: block;
-      position: absolute;
-      height: 0%;
-      width: 100%;
-      bottom: 0px;
-      transition: height 0.5s ease-out;
-      background: rgb(242, 219, 139);
-      background: linear-gradient(0deg, rgba(242, 219, 139, 0.8) 0%, rgba(238, 137, 137, 0.7) 100%);
-    }
-    .square:hover:before {
-      height: 100%;
-    }
+  .content-to-center {
+    margin: 0;
+    padding: 0;
 
-    :nth-child(2) {
-      background-image: url("../images/mogo/gallery-bridge.jpg");
-      background-position: bottom;
-      background-size: cover;
-      width: 50%;
-      background-color: orange;
-      height: 25vw;
-      display: inline-block;
+    // border: 1px solid white;
+    position: absolute;
+    width: auto !important;
+    height: 90px !important;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    img {
+      display: block !important;
+      margin: 0 auto;
+      width: 35px !important;
+      height: 35px !important;
     }
-
-    :nth-child(3) {
-      background-image: url("../images/mogo/gallery-water-bridge.jpg");
-      background-position: center;
-      background-size: cover;
-      width: 50%;
-      background-color: gray;
-      height: 25vw;
-      display: inline-block;
+    span {
+      color: white;
+      white-space: nowrap;
+      font-weight: $font-weight-regular;
+      font-family: $font-family-1;
+      font-size: $font-size-14;
+      // display: inline;
+      // margin: 0 auto;
+      margin-top: 15px;
+      // display: block;
+      // text-align: center;
+      // height: auto;
+      // line-height: 15px;
     }
-    :nth-child(3):hover {
-      // opacity: 0.1;
-      // background-image: url("../images/buda.avif");
-      // background-image: url("../images/mogo/hovimg.png");
-      // background-image: url("../images/mogo/gallery-beach.jpg");
-      // background-image: url("../images/mogo/gallery-water-bridge.jpg");
-      // opacity: 0.3;
-      background-image: url("../images/mogo/hover.svg");
-
-      opacity: 0.4;
-    }
-    :nth-child(4) {
-      background-image: url("../images/mogo/gallery-roof.jpg");
-      background-position: center;
-      background-size: cover;
-      width: 50%;
-      background-color: teal;
-      height: 25vw;
-      display: inline-block;
-    }
-  }
-
-  .visas {
-    background-image: url("../images/mogo/gallery-meduza.jpg");
-    background-position: center;
-    background-size: cover;
-    width: 25%;
-    height: 50vw;
-    display: inline-block;
-    background-color: black;
-    vertical-align: middle;
-  }
-
-  .desine {
-    background-color: green;
-    width: 25%;
-    display: inline-block;
-    :first-child {
-      background-color: lightblue;
-      width: 100%;
-      height: 25vw;
-      display: block;
-    }
-    :nth-child(2) {
-      background-color: violet;
-      width: 100%;
-      height: 25vw;
-      display: block;
+    small {
+      font-weight: $font-weight-Light;
+      font-family: $font-family-3;
+      font-size: $font-size-15;
+      font-style: $font-style-talic;
+      margin-top: 10px;
+      margin-left: 13px;
     }
   }
 }
 
+.gallery {
+  width: 100%;
+  font-size: 0;
+
+  .kaire {
+    display: inline-block;
+    width: 50%;
+    font-size: 0;
+    // box-sizing: border-box;
+    :first-child {
+      width: 50%;
+      height: 25vw;
+      object-fit: cover;
+      display: inline-block;
+      position: relative;
+      img {
+        width: 100%;
+      }
+    }
+    :first-child:hover {
+      .bg {
+        opacity: 1;
+      }
+    }
+
+    :nth-child(2) {
+      width: 50%;
+      height: 25vw;
+      object-fit: cover;
+      display: inline-block;
+      img {
+        width: 100%;
+        position: relative;
+      }
+      .cc {
+        width: 25% !important;
+        left: 25%;
+      }
+    }
+
+    :nth-child(2):hover {
+      .bg {
+        opacity: 1;
+      }
+    }
+    :nth-child(3) {
+      width: 50%;
+      height: 25vw;
+      object-fit: cover;
+      display: inline-block;
+      position: relative;
+      img {
+        width: 100%;
+      }
+      .tt {
+        position: absolute;
+      }
+    }
+    :nth-child(3):hover {
+      .bg {
+        opacity: 1;
+      }
+    }
+    :nth-child(4) {
+      width: 50%;
+      height: 25vw;
+      object-fit: cover;
+      display: inline-block;
+      position: relative;
+      img {
+        width: 100%;
+      }
+    }
+    :nth-child(4):hover {
+      .bg {
+        opacity: 1;
+      }
+    }
+  }
+  .visas {
+    width: 25%;
+    display: inline-block;
+    position: relative;
+    img {
+      width: 100%;
+      object-fit: cover;
+      height: 50vw;
+    }
+    .taisyti {
+      height: 100%;
+      top: 0;
+
+      img {
+        margin-bottom: 15px;
+      }
+    }
+    .rikiuoti {
+      small {
+        display: inline-block;
+      }
+    }
+    :hover {
+      .bg {
+        opacity: 1;
+      }
+    }
+  }
+
+  .desine {
+    // border: 1px solid red;
+    display: inline-block;
+    width: 25%;
+    box-sizing: border-box;
+
+    :first-child {
+      display: inline-block;
+      width: 100%;
+      height: 25vw;
+      position: relative;
+      img {
+        object-fit: cover;
+      }
+    }
+    :first-child:hover {
+      .bg {
+        opacity: 1;
+        z-index: 1;
+      }
+    }
+    :nth-child(2) {
+      display: inline-block;
+      width: 100%;
+      height: 25vw;
+      object-fit: cover;
+      .cc {
+        width: 25% !important;
+        left: 75%;
+      }
+      img {
+        position: relative;
+      }
+    }
+    :nth-child(2):hover {
+      .bg {
+        opacity: 1;
+        z-index: 1;
+      }
+    }
+  }
+}
+.fix {
+  height: 100%;
+}
+.fix2 {
+  position: absolute;
+}
 .queate-2 {
   width: 100%;
   // background-color: #f8f8f8;

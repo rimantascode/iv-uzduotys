@@ -775,101 +775,192 @@ section.queate span {
   text-align: center;
 }
 
+.bg {
+  position: absolute;
+  width: 100% !important;
+  background: rgb(242, 219, 139);
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(242, 219, 139, 0.8)), to(rgba(238, 137, 137, 0.7)));
+  background: linear-gradient(0deg, rgba(242, 219, 139, 0.8) 0%, rgba(238, 137, 137, 0.7) 100%);
+  left: 0;
+  z-index: 1;
+  opacity: 0;
+}
+.bg .content-to-center {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  width: auto !important;
+  height: 90px !important;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+.bg .content-to-center img {
+  display: block !important;
+  margin: 0 auto;
+  width: 35px !important;
+  height: 35px !important;
+}
+.bg .content-to-center span {
+  color: white;
+  white-space: nowrap;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  margin-top: 15px;
+}
+.bg .content-to-center small {
+  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-style: italic;
+  margin-top: 10px;
+  margin-left: 13px;
+}
+
 .gallery {
   width: 100%;
   font-size: 0;
 }
 .gallery .kaire {
-  width: 50%;
   display: inline-block;
-  height: 25vw;
+  width: 50%;
+  font-size: 0;
 }
 .gallery .kaire :first-child {
-  background-image: url("../images/mogo/gallery-beach.jpg");
-  background-position: bottom;
-  background-size: cover;
   width: 50%;
-  background-color: wheat;
   height: 25vw;
+  -o-object-fit: cover;
+     object-fit: cover;
   display: inline-block;
-  cursor: pointer;
-}
-.gallery .kaire .square {
   position: relative;
 }
-.gallery .kaire .square:before {
-  content: "";
-  display: block;
-  position: absolute;
-  height: 0%;
+.gallery .kaire :first-child img {
   width: 100%;
-  bottom: 0px;
-  -webkit-transition: height 0.5s ease-out;
-  transition: height 0.5s ease-out;
-  background: rgb(242, 219, 139);
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(242, 219, 139, 0.8)), to(rgba(238, 137, 137, 0.7)));
-  background: linear-gradient(0deg, rgba(242, 219, 139, 0.8) 0%, rgba(238, 137, 137, 0.7) 100%);
 }
-.gallery .kaire .square:hover:before {
-  height: 100%;
+.gallery .kaire :first-child:hover .bg {
+  opacity: 1;
 }
 .gallery .kaire :nth-child(2) {
-  background-image: url("../images/mogo/gallery-bridge.jpg");
-  background-position: bottom;
-  background-size: cover;
   width: 50%;
-  background-color: orange;
   height: 25vw;
+  -o-object-fit: cover;
+     object-fit: cover;
   display: inline-block;
+}
+.gallery .kaire :nth-child(2) img {
+  width: 100%;
+  position: relative;
+}
+.gallery .kaire :nth-child(2) .cc {
+  width: 25% !important;
+  left: 25%;
+}
+.gallery .kaire :nth-child(2):hover .bg {
+  opacity: 1;
 }
 .gallery .kaire :nth-child(3) {
-  background-image: url("../images/mogo/gallery-water-bridge.jpg");
-  background-position: center;
-  background-size: cover;
   width: 50%;
-  background-color: gray;
   height: 25vw;
+  -o-object-fit: cover;
+     object-fit: cover;
   display: inline-block;
+  position: relative;
 }
-.gallery .kaire :nth-child(3):hover {
-  background-image: url("../images/mogo/hover.svg");
-  opacity: 0.4;
+.gallery .kaire :nth-child(3) img {
+  width: 100%;
+}
+.gallery .kaire :nth-child(3) .tt {
+  position: absolute;
+}
+.gallery .kaire :nth-child(3):hover .bg {
+  opacity: 1;
 }
 .gallery .kaire :nth-child(4) {
-  background-image: url("../images/mogo/gallery-roof.jpg");
-  background-position: center;
-  background-size: cover;
   width: 50%;
-  background-color: teal;
   height: 25vw;
+  -o-object-fit: cover;
+     object-fit: cover;
   display: inline-block;
+  position: relative;
+}
+.gallery .kaire :nth-child(4) img {
+  width: 100%;
+}
+.gallery .kaire :nth-child(4):hover .bg {
+  opacity: 1;
 }
 .gallery .visas {
-  background-image: url("../images/mogo/gallery-meduza.jpg");
-  background-position: center;
-  background-size: cover;
   width: 25%;
-  height: 50vw;
   display: inline-block;
-  background-color: black;
-  vertical-align: middle;
+  position: relative;
+}
+.gallery .visas img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 50vw;
+}
+.gallery .visas .taisyti {
+  height: 100%;
+  top: 0;
+}
+.gallery .visas .taisyti img {
+  margin-bottom: 15px;
+}
+.gallery .visas .rikiuoti small {
+  display: inline-block;
+}
+.gallery .visas :hover .bg {
+  opacity: 1;
 }
 .gallery .desine {
-  background-color: green;
-  width: 25%;
   display: inline-block;
+  width: 25%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 .gallery .desine :first-child {
-  background-color: lightblue;
+  display: inline-block;
   width: 100%;
   height: 25vw;
-  display: block;
+  position: relative;
+}
+.gallery .desine :first-child img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.gallery .desine :first-child:hover .bg {
+  opacity: 1;
+  z-index: 1;
 }
 .gallery .desine :nth-child(2) {
-  background-color: violet;
+  display: inline-block;
   width: 100%;
   height: 25vw;
-  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.gallery .desine :nth-child(2) .cc {
+  width: 25% !important;
+  left: 75%;
+}
+.gallery .desine :nth-child(2) img {
+  position: relative;
+}
+.gallery .desine :nth-child(2):hover .bg {
+  opacity: 1;
+  z-index: 1;
+}
+
+.fix {
+  height: 100%;
+}
+
+.fix2 {
+  position: absolute;
 }
 
 .queate-2 {
