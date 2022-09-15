@@ -643,6 +643,42 @@ section.queate span {
   font-size: 24px;
 }
 
+.hov-efect {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  background: rgb(242, 219, 139);
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(242, 219, 139, 0.8)), to(rgba(238, 137, 137, 0.7)));
+  background: linear-gradient(0deg, rgba(242, 219, 139, 0.8) 0%, rgba(238, 137, 137, 0.7) 100%);
+  height: calc(100% - 49px);
+  opacity: 0;
+  text-align: center;
+  display: table;
+}
+.hov-efect div {
+  display: table-cell;
+  vertical-align: middle;
+}
+.hov-efect div img {
+  width: 30px !important;
+  height: 30px !important;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+.hov-efect div .ho {
+  background: #fce38a;
+  display: inline-block;
+  padding: 13px;
+}
+.hov-efect div .ho .facebook {
+  width: 18px !important;
+}
+.hov-efect div .ho:hover {
+  background-color: #f38181;
+}
+
 .who-we-are {
   width: 62%;
   margin: 0 auto;
@@ -680,37 +716,28 @@ section.queate span {
 .who-we-are ul li img {
   z-index: 0;
 }
-.who-we-are ul .square {
-  position: relative;
-  background: red;
-}
-.who-we-are ul .square:before {
-  content: "";
-  display: block;
-  position: absolute;
-  height: 0%;
-  width: 100%;
-  bottom: 0;
-  -webkit-transition: height 0.5s ease-out;
-  transition: height 0.5s ease-out;
-  background: rgb(242, 219, 139);
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(242, 219, 139, 0.8)), to(rgba(238, 137, 137, 0.7)));
-  background: linear-gradient(0deg, rgba(242, 219, 139, 0.8) 0%, rgba(238, 137, 137, 0.7) 100%);
-}
-.who-we-are ul .square:hover:before {
-  z-index: 2;
-  height: 100%;
-}
 .who-we-are ul li:first-child {
   display: inline-block;
   margin-right: 5%;
+  position: relative;
+}
+.who-we-are ul li:first-child:hover .hov-efect {
+  opacity: 1;
 }
 .who-we-are ul li:nth-child(2) {
   display: inline-block;
   margin-right: 5%;
+  position: relative;
+}
+.who-we-are ul li:nth-child(2):hover .hov-efect {
+  opacity: 1;
 }
 .who-we-are ul li:nth-child(3) {
   display: inline-block;
+  position: relative;
+}
+.who-we-are ul li:nth-child(3):hover .hov-efect {
+  opacity: 1;
 }
 .who-we-are ul img {
   width: 100%;
@@ -1277,6 +1304,7 @@ section.queate span {
   display: inline-block;
   margin: 0;
   padding: 0;
+  vertical-align: middle;
 }
 .last-blog .logo {
   font-size: 46px;
@@ -1287,10 +1315,8 @@ section.queate span {
   padding: 0;
 }
 .last-blog > div:nth-child(2) {
-  font-size: 84px;
-  background-color: red;
   display: inline-block;
-  width: 33.33%;
+  width: 40%;
 }
 .last-blog > div:nth-child(2) p:first-child {
   color: #999999;
@@ -1298,7 +1324,12 @@ section.queate span {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   text-align: left;
-  margin: 0;
+  margin-top: 0;
+  padding-right: 10px;
+  vertical-align: top;
+  line-height: 25px;
+  word-spacing: 5px;
+  margin-bottom: 40px;
 }
 .last-blog > div:nth-child(2) p:nth-child(2) {
   color: #333333;
@@ -1306,7 +1337,10 @@ section.queate span {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   text-align: left;
-  margin: 0;
+  border-bottom: 1px solid gray;
+  width: 95%;
+  padding-bottom: 15px;
+  margin-bottom: 0;
 }
 .last-blog > div:nth-child(2) p:nth-child(2) strong {
   color: #333333;
@@ -1321,7 +1355,8 @@ section.queate span {
   font-style: italic;
   font-size: 15px;
   color: #333333;
-  margin: 0;
+  margin-bottom: 35px;
+  margin-top: 15px;
 }
 .last-blog > div:nth-child(2) p:nth-child(3) img {
   margin-left: 5px;
@@ -1330,30 +1365,108 @@ section.queate span {
   height: 20px;
   width: 15px;
 }
-.last-blog > div:nth-child(3) {
-  background-color: red;
+.last-blog > div:nth-child(2) p:nth-child(3) span {
+  vertical-align: text-bottom;
+}
+.last-blog > div:nth-child(2) form {
+  width: 90%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 0;
+  padding: 0;
+  margin: 0;
+  vertical-align: bottom;
+}
+.last-blog > div:nth-child(2) form input {
+  width: 60%;
   display: inline-block;
-  width: 33.33%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 36px;
+  border: 1px solid #95e1d3;
+}
+.last-blog > div:nth-child(2) form input::-webkit-input-placeholder {
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  color: #ccc;
+  padding-left: 5px;
+}
+.last-blog > div:nth-child(2) form input::-moz-placeholder {
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  color: #ccc;
+  padding-left: 5px;
+}
+.last-blog > div:nth-child(2) form input:-ms-input-placeholder {
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  color: #ccc;
+  padding-left: 5px;
+}
+.last-blog > div:nth-child(2) form input::-ms-input-placeholder {
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  color: #ccc;
+  padding-left: 5px;
+}
+.last-blog > div:nth-child(2) form input::placeholder {
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  color: #ccc;
+  padding-left: 5px;
+}
+.last-blog > div:nth-child(2) form input[type=submit] {
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 40%;
+  padding: 10px;
+  background-color: #95e1d3;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: white;
+}
+.last-blog > div:nth-child(3) {
+  display: inline-block;
 }
 .last-blog div.blogs {
   font-size: 15px;
-  background-color: red;
   display: inline-block;
-  width: 33.33%;
+  width: 30%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 .last-blog .blogs > div {
-  background-color: blue;
   display: inline-block;
+  margin-bottom: 47px;
 }
 .last-blog .blogs > div span {
   display: inline-block;
   width: 60%;
-  background-color: yellow;
   vertical-align: top;
-  margin-top: 15px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #333333;
+  text-transform: uppercase;
+  margin-top: 25px;
 }
 .last-blog .blogs > div span small {
-  font-size: 14px;
+  font-size: 13px;
+  font-family: 300;
+  font-style: italic;
+  color: #999999;
   display: block;
 }
 .last-blog .blogs > div img {
@@ -1361,8 +1474,10 @@ section.queate span {
 }
 .last-blog :nth-child(4) {
   display: inline-block;
-  font-size: 15px;
-  width: 33.33%;
+  font-size: 0;
+  width: 30%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-size: 0;
 }
 .last-blog :nth-child(4) .pics-rows {
@@ -1372,7 +1487,6 @@ section.queate span {
   display: inline-block;
   width: 32%;
   height: auto;
-  background-color: yellow;
 }
 .last-blog :nth-child(4) .pics-rows div img {
   -o-object-fit: cover;
@@ -1384,4 +1498,13 @@ section.queate span {
 }
 .last-blog :nth-child(4) .pics-rows :nth-child(2) {
   margin-right: 2%;
+}
+.last-blog :nth-child(4) span {
+  margin-top: 10px;
+  width: 50%;
+  font-size: 13px;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-weight: 300;
+  color: #333333;
 }/*# sourceMappingURL=main.css.map */

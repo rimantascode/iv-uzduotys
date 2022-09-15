@@ -694,6 +694,41 @@ section.queate {
     font-size: $font-size-24;
   }
 }
+.hov-efect {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  background: rgb(242, 219, 139);
+  background: linear-gradient(0deg, rgba(242, 219, 139, 0.8) 0%, rgba(238, 137, 137, 0.7) 100%);
+  height: calc(100% - 49px);
+  opacity: 0;
+  text-align: center;
+  display: table;
+  div {
+    display: table-cell;
+    vertical-align: middle;
+    img {
+      width: 30px !important;
+      height: 30px !important;
+      object-fit: cover;
+      object-position: top;
+    }
+    .ho {
+      background: #fce38a;
+      display: inline-block;
+      padding: 13px;
+
+      // #fce38a;
+      .facebook {
+        width: 18px !important;
+      }
+    }
+    .ho:hover {
+      background-color: #f38181;
+      // width: 100%;
+    }
+  }
+}
 
 .who-we-are {
   width: 62%;
@@ -734,39 +769,37 @@ section.queate {
       z-index: 0;
     }
 
-    .square {
-      position: relative;
-      background: red;
-    }
-
-    .square:before {
-      content: "";
-      display: block;
-      position: absolute;
-      height: 0%;
-      width: 100%;
-      bottom: 0;
-      transition: height 0.5s ease-out;
-      background: rgb(242, 219, 139);
-      background: linear-gradient(0deg, rgba(242, 219, 139, 0.8) 0%, rgba(238, 137, 137, 0.7) 100%);
-    }
-    .square:hover:before {
-      z-index: 2;
-      height: 100%;
-    }
-
     li:first-child {
       display: inline-block;
       margin-right: 5%;
+      position: relative;
+    }
+
+    li:first-child:hover {
+      .hov-efect {
+        opacity: 1;
+      }
     }
 
     li:nth-child(2) {
       display: inline-block;
       margin-right: 5%;
+      position: relative;
+    }
+    li:nth-child(2):hover {
+      .hov-efect {
+        opacity: 1;
+      }
     }
 
     li:nth-child(3) {
       display: inline-block;
+      position: relative;
+    }
+    li:nth-child(3):hover {
+      .hov-efect {
+        opacity: 1;
+      }
     }
 
     img {
@@ -1389,6 +1422,7 @@ section.queate {
     display: inline-block;
     margin: 0;
     padding: 0;
+    vertical-align: middle;
   }
   .logo {
     font-size: 46px;
@@ -1399,17 +1433,20 @@ section.queate {
     padding: 0;
   }
   > div:nth-child(2) {
-    font-size: 84px;
-    background-color: red;
     display: inline-block;
-    width: 33.33%;
+    width: 40%;
     p:first-child {
       color: $paragraph-primary-color;
       font-size: 15px;
       font-family: $font-family-3;
       font-weight: $font-weight-regular;
       text-align: left;
-      margin: 0;
+      margin-top: 0;
+      padding-right: 10px;
+      vertical-align: top;
+      line-height: 25px;
+      word-spacing: 5px;
+      margin-bottom: 40px;
     }
     p:nth-child(2) {
       color: $color-secondary-dark;
@@ -1417,7 +1454,11 @@ section.queate {
       font-family: $font-family-1;
       font-weight: $font-weight-regular;
       text-align: left;
-      margin: 0;
+      border-bottom: 1px solid gray;
+      width: 95%;
+      padding-bottom: 15px;
+      margin-bottom: 0;
+
       strong {
         color: $color-secondary-dark;
         font-size: 18px;
@@ -1427,13 +1468,14 @@ section.queate {
     }
     p:nth-child(3) {
       text-align: left;
-      // background-color: black;
+
       font-family: $font-family-3;
       font-weight: $font-weight-Light;
       font-style: $font-style-talic;
       font-size: $font-size-15;
       color: $color-secondary-dark;
-      margin: 0;
+      margin-bottom: 35px;
+      margin-top: 15px;
       img {
         margin-left: 5px;
       }
@@ -1441,34 +1483,74 @@ section.queate {
         height: 20px;
         width: 15px;
       }
+      span {
+        vertical-align: text-bottom;
+      }
+    }
+    form {
+      width: 90%;
+      box-sizing: border-box;
+      font-size: 0;
+      padding: 0;
+      margin: 0;
+      vertical-align: bottom;
+      input {
+        width: 60%;
+        display: inline-block;
+        box-sizing: border-box;
+        height: 36px;
+        border: 1px solid #95e1d3;
+      }
+      input::placeholder {
+        font-size: 15px;
+        font-family: $font-family-3;
+        font-weight: $font-weight-Light;
+        font-style: $font-style-talic;
+        color: #ccc;
+        padding-left: 5px;
+      }
+      input[type="submit"] {
+        display: inline-block;
+        box-sizing: border-box;
+        width: 40%;
+        padding: 10px;
+        background-color: #95e1d3;
+        font-size: $font-size-14;
+        font-family: $font-family-1;
+        font-weight: $font-weight-bold;
+        color: white;
+      }
     }
   }
   > div:nth-child(3) {
-    background-color: red;
     display: inline-block;
-    width: 33.33%;
   }
 
   div.blogs {
     font-size: 15px;
-    background-color: red;
     display: inline-block;
-    width: 33.33%;
-    // vertical-align: middle;
+    width: 30%;
+    box-sizing: border-box;
   }
   .blogs > div {
-    background-color: blue;
     display: inline-block;
-    // width: 33.33%;
+    margin-bottom: 47px;
 
     span {
       display: inline-block;
       width: 60%;
-      background-color: yellow;
       vertical-align: top;
-      margin-top: 15px;
+      font-family: $font-family-1;
+      font-size: 12px;
+      font-weight: $font-weight-regular;
+      color: $color-secondary-dark;
+      text-transform: uppercase;
+      margin-top: 25px;
       small {
-        font-size: 14px;
+        font-size: 13px;
+        font-family: $font-weight-Light;
+        font-style: $font-style-talic;
+        color: $paragraph-primary-color;
         display: block;
       }
     }
@@ -1478,21 +1560,17 @@ section.queate {
   }
   :nth-child(4) {
     display: inline-block;
-    // background-color: green;
-    font-size: 15px;
-    width: 33.33%;
+    font-size: 0;
+    width: 30%;
+    box-sizing: border-box;
     font-size: 0;
     .pics-rows {
-      // background-color: red;
       margin-top: 2%;
       div {
         display: inline-block;
         width: 32%;
 
         height: auto;
-        background-color: yellow;
-        // padding: 14px;
-        // box-sizing: border-box;
         img {
           object-fit: cover;
           width: 100%;
@@ -1504,6 +1582,15 @@ section.queate {
       :nth-child(2) {
         margin-right: 2%;
       }
+    }
+    span {
+      margin-top: 10px;
+      width: 50%;
+      font-size: 13px;
+      font-family: $font-family-3;
+      font-style: $font-style-talic;
+      font-weight: $font-weight-Light;
+      color: $color-secondary-dark;
     }
   }
 }
