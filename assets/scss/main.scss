@@ -1384,47 +1384,126 @@ section.queate {
 .last-blog {
   font-size: 0;
   > div:first-child p {
-    background: green;
+    // background: green;
     width: 33.33%;
     display: inline-block;
+    margin: 0;
+    padding: 0;
+  }
+  .logo {
+    font-size: 46px;
+    font-family: $font-family-1;
+    font-weight: $font-weight-bold;
+    color: #ccc;
+    margin: 0;
+    padding: 0;
   }
   > div:nth-child(2) {
     font-size: 84px;
     background-color: red;
     display: inline-block;
     width: 33.33%;
+    p:first-child {
+      color: $paragraph-primary-color;
+      font-size: 15px;
+      font-family: $font-family-3;
+      font-weight: $font-weight-regular;
+      text-align: left;
+      margin: 0;
+    }
+    p:nth-child(2) {
+      color: $color-secondary-dark;
+      font-size: 14px;
+      font-family: $font-family-1;
+      font-weight: $font-weight-regular;
+      text-align: left;
+      margin: 0;
+      strong {
+        color: $color-secondary-dark;
+        font-size: 18px;
+        font-family: $font-family-1;
+        font-weight: $font-weight-bold;
+      }
+    }
+    p:nth-child(3) {
+      text-align: left;
+      // background-color: black;
+      font-family: $font-family-3;
+      font-weight: $font-weight-Light;
+      font-style: $font-style-talic;
+      font-size: $font-size-15;
+      color: $color-secondary-dark;
+      margin: 0;
+      img {
+        margin-left: 5px;
+      }
+      .image-pin {
+        height: 20px;
+        width: 15px;
+      }
+    }
   }
-  // > div:nth-child(2) > {
-  //   font-size: 15px;
-  //   background-color: red;
-  //   display: inline-block;
-  // }
+  > div:nth-child(3) {
+    background-color: red;
+    display: inline-block;
+    width: 33.33%;
+  }
+
   div.blogs {
     font-size: 15px;
     background-color: red;
     display: inline-block;
-    // width: 33.33%;
+    width: 33.33%;
     // vertical-align: middle;
   }
-  .blogs > div:first-child > p {
+  .blogs > div {
     background-color: blue;
     display: inline-block;
-    width: 50%;
-    padding: 0;
-    margin: 0;
+    // width: 33.33%;
 
-    + span {
+    span {
       display: inline-block;
-      width: 50%;
+      width: 60%;
       background-color: yellow;
-      vertical-align: middle;
+      vertical-align: top;
+      margin-top: 15px;
+      small {
+        font-size: 14px;
+        display: block;
+      }
+    }
+    img {
+      width: 40%;
     }
   }
+  :nth-child(4) {
+    display: inline-block;
+    // background-color: green;
+    font-size: 15px;
+    width: 33.33%;
+    font-size: 0;
+    .pics-rows {
+      // background-color: red;
+      margin-top: 2%;
+      div {
+        display: inline-block;
+        width: 32%;
 
-  // .blogs > div:first-child > span {
-  //   display: inline-block;
-  //   width: 50%;
-  //   background-color: yellow;
-  //   vertical-align: baseline;
-  // }
+        height: auto;
+        background-color: yellow;
+        // padding: 14px;
+        // box-sizing: border-box;
+        img {
+          object-fit: cover;
+          width: 100%;
+        }
+      }
+      :first-child {
+        margin-right: 2%;
+      }
+      :nth-child(2) {
+        margin-right: 2%;
+      }
+    }
+  }
 }
