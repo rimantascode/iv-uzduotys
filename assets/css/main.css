@@ -1267,4 +1267,37 @@ section.queate span {
   margin: 0 auto;
   margin-top: 25px;
   margin-bottom: 25px;
+}
+
+.last-blog {
+  font-size: 0;
+}
+.last-blog > div:first-child p {
+  background: green;
+  width: 33.33%;
+  display: inline-block;
+}
+.last-blog > div:nth-child(2) {
+  font-size: 84px;
+  background-color: red;
+  display: inline-block;
+  width: 33.33%;
+}
+.last-blog div.blogs {
+  font-size: 15px;
+  background-color: red;
+  display: inline-block;
+}
+.last-blog .blogs > div:first-child > p {
+  background-color: blue;
+  display: inline-block;
+  width: 50%;
+  padding: 0;
+  margin: 0;
+}
+.last-blog .blogs > div:first-child > p + span {
+  display: inline-block;
+  width: 50%;
+  background-color: yellow;
+  vertical-align: middle;
 }/*# sourceMappingURL=main.css.map */

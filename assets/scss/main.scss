@@ -1380,3 +1380,51 @@ section.queate {
     margin-bottom: 25px;
   }
 }
+
+.last-blog {
+  font-size: 0;
+  > div:first-child p {
+    background: green;
+    width: 33.33%;
+    display: inline-block;
+  }
+  > div:nth-child(2) {
+    font-size: 84px;
+    background-color: red;
+    display: inline-block;
+    width: 33.33%;
+  }
+  // > div:nth-child(2) > {
+  //   font-size: 15px;
+  //   background-color: red;
+  //   display: inline-block;
+  // }
+  div.blogs {
+    font-size: 15px;
+    background-color: red;
+    display: inline-block;
+    // width: 33.33%;
+    // vertical-align: middle;
+  }
+  .blogs > div:first-child > p {
+    background-color: blue;
+    display: inline-block;
+    width: 50%;
+    padding: 0;
+    margin: 0;
+
+    + span {
+      display: inline-block;
+      width: 50%;
+      background-color: yellow;
+      vertical-align: middle;
+    }
+  }
+
+  // .blogs > div:first-child > span {
+  //   display: inline-block;
+  //   width: 50%;
+  //   background-color: yellow;
+  //   vertical-align: baseline;
+  // }
+}
