@@ -553,16 +553,17 @@ section.main-container .pics > div:nth-child(2) {
   display: inline-block;
   width: 50%;
   font-size: 0;
+  background-color: red;
+  height: 100%;
 }
 section.main-container .pics > div:nth-child(2) > div {
-  width: 100%;
   border: 1px solid #e5e5e5;
   height: 56px;
   padding-left: 10px;
 }
-section.main-container .pics > div:nth-child(2) > div > img {
-  width: 34px;
+section.main-container .pics > div:nth-child(2) > div img {
   vertical-align: middle;
+  width: 20px;
 }
 section.main-container span {
   font-size: 14px;
@@ -572,15 +573,23 @@ section.main-container span {
   padding-left: 10px;
   line-height: 56px;
 }
+section.main-container .equa span + span {
+  margin-left: calc(100% - 160px);
+}
+section.main-container .bulls span + span {
+  margin-left: calc(100% - 172px);
+}
+section.main-container .photog span + span {
+  margin-left: calc(100% - 192px);
+}
 section.main-container .pics > div:nth-child(2) p {
   display: inline-block;
-  width: 100%;
+  width: 98%;
   font-size: 16px;
   margin: 0;
-  height: 100%;
+  height: 50px;
   overflow: scroll;
   overflow-x: hidden;
-  padding-top: 25px;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-style: italic;
