@@ -279,6 +279,11 @@ header > ul {
   a {
     text-decoration: none;
   }
+  a:hover {
+    li {
+      border-top: 3px solid $color-main-deviders;
+    }
+  }
 }
 
 .img1,
