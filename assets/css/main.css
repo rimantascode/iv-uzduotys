@@ -416,7 +416,6 @@ header > ul a:hover li .header-hov {
 }
 
 .container-numbers {
-  margin-top: 110px;
   height: 270px;
   background-color: #95e1d3;
 }
@@ -458,7 +457,6 @@ header > ul a:hover li .header-hov {
 }
 
 .a-services {
-  padding-top: 91px;
   width: 62%;
   margin: 0 auto;
   background-color: #fff;
@@ -524,11 +522,12 @@ header > ul a:hover li .header-hov {
 .a-services p.description {
   font-size: 14px;
   color: #999999;
-  width: 86%;
+  width: 75%;
   margin-top: -5px;
   text-align: left;
   margin-right: 5px;
   margin-left: 18%;
+  margin-bottom: 35px;
 }
 .a-services div.icons {
   display: inline-block;
@@ -539,18 +538,15 @@ header > ul a:hover li .header-hov {
   width: 12%;
 }
 .a-services .atskirti {
-  border-top: 1px solid #999999;
-  margin-top: 25px;
-  margin-bottom: 25px;
+  border-top: 1px solid #e5e5e5;
+  margin-bottom: 35px;
 }
 
 .unique-design {
   background-image: url("../images/mogo/gray-background.png");
-  padding-top: 91px;
-  width: 100%;
+  width: 100% !important;
   margin: 0 auto;
   position: relative;
-  margin-top: 91px;
 }
 .unique-design h3 {
   text-align: center;
@@ -596,7 +592,6 @@ header > ul a:hover li .header-hov {
 section.main-container {
   width: 62%;
   margin: 0 auto;
-  margin-top: 91px;
 }
 section.main-container h3 {
   text-align: center;
@@ -683,7 +678,7 @@ section.main-container .pics > div:nth-child(2) p {
 section.queate {
   width: 100%;
   background-color: #f8f8f8;
-  margin-top: 119px;
+  padding: 0;
 }
 section.queate .main-div {
   width: 50%;
@@ -856,8 +851,9 @@ section.queate span {
 }
 
 .brands {
-  width: 100%;
+  width: 100% !important;
   background-color: #f8f8f8;
+  padding: 0;
   margin-top: 91px;
 }
 .brands img {
@@ -1143,7 +1139,7 @@ section.queate span {
 }
 
 .testimonials {
-  width: 100%;
+  width: 100% !important;
   height: auto;
   background-image: url("../images/mogo/mountain-background.jpg");
   padding-top: 91px;
