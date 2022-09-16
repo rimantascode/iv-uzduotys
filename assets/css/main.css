@@ -1084,8 +1084,9 @@ section.queate span {
 }
 
 .queate-2 {
-  width: 100%;
+  width: 100% !important;
   margin-top: 91px;
+  padding-bottom: 0 !important;
 }
 .queate-2 .main-div {
   width: 50%;

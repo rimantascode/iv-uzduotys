@@ -1185,8 +1185,9 @@ section.queate {
   position: absolute;
 }
 .queate-2 {
-  width: 100%;
+  width: 100% !important;
   margin-top: 91px;
+  padding-bottom: 0 !important;
 
   .main-div {
     width: 50%;
