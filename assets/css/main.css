@@ -179,14 +179,14 @@ header div nav {
   display: inline-block;
 }
 header div nav ul {
-  width: 60%;
+  width: 80%;
   margin: 0 auto;
   background-position: center;
   background-size: cover;
   margin: 0;
   padding: 0;
   text-align: center;
-  margin-left: 40%;
+  margin-left: 20%;
 }
 header div nav li {
   display: inline-block;
@@ -364,7 +364,7 @@ header > ul a:hover li .header-hov {
   margin-top: 40px;
 }
 .container p {
-  width: 62%;
+  width: 80%;
   text-align: center;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -482,6 +482,7 @@ header > ul a:hover li .header-hov {
   color: #999999;
   margin: 0 auto;
   margin-top: 43px;
+  width: 80%;
 }
 .a-services :nth-child(5) {
   font-size: 0;
@@ -611,9 +612,11 @@ section.main-container p {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 15px;
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
   margin-top: 40px;
   margin-bottom: 91px;
-  text-align: center;
 }
 section.main-container .pics {
   font-size: 0;
@@ -786,6 +789,8 @@ section.queate span {
   font-weight: 700;
 }
 .who-we-are p {
+  width: 80%;
+  margin: 0 auto;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 15px;
@@ -882,6 +887,8 @@ section.queate span {
   font-weight: 700;
 }
 .some-of-our-work p {
+  width: 80%;
+  margin: 0 auto;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 15px;
@@ -1620,4 +1627,117 @@ footer p {
 }
 footer p span {
   color: #f38181;
+}
+
+@media only screen and (max-width: 1350px) {
+  header div nav ul {
+    width: 90% !important;
+    margin-left: 10% !important;
+  }
+}
+@media only screen and (max-width: 1250px) {
+  header h1 {
+    font-size: 3rem !important;
+  }
+  header h2 {
+    font-size: 7rem !important;
+  }
+  div.blogs {
+    vertical-align: top;
+  }
+  .last-blog .blogs > div span {
+    margin: 0 auto;
+    font-size: 10px;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .last-blog .blogs > div span small {
+    font-size: 12px;
+  }
+  .last-blog :nth-child(4) {
+    vertical-align: top;
+  }
+  .last-blog > div:nth-child(2) p:nth-child(3) span img {
+    width: 15px;
+    height: 15px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    margin-left: 2px;
+  }
+  .last-blog > div:nth-child(2) form input {
+    width: 58%;
+  }
+  .last-blog > div:nth-child(2) form input[type=submit] {
+    width: 42%;
+  }
+  .unique-design img.phone {
+    right: 5%;
+  }
+}
+@media only screen and (max-width: 992px) {
+  header div nav ul {
+    width: 90% !important;
+    margin-left: 10% !important;
+  }
+  .container-numbers .number {
+    font-size: 42px;
+  }
+  .container-numbers .text {
+    font-size: 18px;
+  }
+  .container-numbers ul li:last-child .number {
+    padding-bottom: 14px;
+  }
+  .a-services div h5 {
+    margin-left: 18%;
+    width: 50%;
+  }
+  .a-services p.description {
+    padding-left: 13%;
+    width: 50%;
+  }
+  .unique-design img.phone {
+    right: 0%;
+  }
+  section.main-container .pics > div:nth-child(2) p {
+    height: 100px;
+  }
+  section.queate .main-div {
+    width: 100%;
+  }
+  section.queate div > div:first-child {
+    display: none;
+  }
+  section.queate blockquote {
+    width: 62%;
+    margin: 0 auto;
+    display: block;
+  }
+  .queate-2 .main-div {
+    width: 62%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .queate-2 blockquote {
+    width: 82%;
+    display: inline-block;
+    font-size: 24px;
+    font-style: italic;
+    padding-left: 64px;
+  }
+  .testimonials .testi-pic {
+    margin-left: 25px;
+    margin-bottom: 25px;
+  }
+  .last-blog > div:nth-child(2) form input {
+    width: 58%;
+    height: 25px;
+  }
+  .last-blog > div:nth-child(2) form input[type=submit] {
+    width: 42%;
+    height: 25px;
+    padding: 0;
+    font-size: 12px;
+  }
 }/*# sourceMappingURL=main.css.map */
