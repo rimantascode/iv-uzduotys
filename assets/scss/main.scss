@@ -1850,4 +1850,35 @@ footer {
     padding: 0;
     font-size: 12px;
   }
+  @media only screen and (max-width: 768px) {
+    .gallery .kaire {
+      width: 100%;
+    }
+    .gallery .desine {
+      width: 75%;
+    }
+    .visas {
+      width: 25%;
+    }
+
+    header h1 {
+      font-size: 2rem !important;
+    }
+    header h2 {
+      font-size: 5rem !important;
+    }
+    .last-blog :nth-child(4) {
+      width: 100% !important;
+    }
+    .last-blog > div:first-child > p:last-child {
+      display: none;
+    }
+    .last-blog > div:first-child > p {
+      width: 50%;
+    }
+    .last-blog > div:nth-child(2),
+    .last-blog > div:nth-child(3) {
+      width: 50%;
+    }
+  }
 }
