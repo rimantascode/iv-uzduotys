@@ -145,6 +145,15 @@ header {
   background-position: center;
   background-size: cover;
 }
+header .nav-hov {
+  position: absolute;
+  width: 70%;
+  height: 100%;
+  border-bottom: 3px solid #fce38a;
+  top: 5px;
+  left: 15px;
+  opacity: 0;
+}
 header .skirtukas {
   margin: 0 auto;
   display: block !important;
@@ -152,28 +161,32 @@ header .skirtukas {
   width: 60px;
   margin-top: 15px;
   margin-bottom: 15px;
+  border-top: 3px solid white;
 }
 header div {
   width: 62%;
   margin: 0 auto;
   padding-top: 28px;
+  font-size: 0;
 }
 header div div {
   display: inline-block;
   font-size: 28px;
-  width: 48%;
+  width: 10%;
 }
 header div nav {
-  width: 52%;
+  width: 90%;
   display: inline-block;
 }
 header div nav ul {
-  width: 100%;
+  width: 60%;
   margin: 0 auto;
   background-position: center;
   background-size: cover;
   margin: 0;
   padding: 0;
+  text-align: center;
+  margin-left: 40%;
 }
 header div nav li {
   display: inline-block;
@@ -183,6 +196,7 @@ header div nav li {
   text-transform: uppercase;
   list-style-type: none;
   text-align: center;
+  position: relative;
 }
 header div nav a {
   text-decoration: none;
@@ -190,10 +204,18 @@ header div nav a {
   font-weight: 400;
   color: #fff;
 }
+header div nav li:hover .nav-hov {
+  opacity: 1;
+}
 
 header > div:nth-child(2) {
-  padding-top: 11vh;
   text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
 }
 header > div:nth-child(2) h1 {
   font-size: 72px;
@@ -208,6 +230,7 @@ header > div:nth-child(2) h2 {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   color: #fff;
+  text-transform: uppercase;
 }
 header > div:nth-child(2) h2:nth-child(3) {
   margin-top: 0.2vh;
@@ -242,6 +265,7 @@ header > ul li {
   border-top: 3px solid #fff;
   list-style-type: none;
   margin-right: 8%;
+  position: relative;
 }
 header > ul span {
   color: #fff;
@@ -258,13 +282,21 @@ header > ul small {
 header > ul a {
   text-decoration: none;
 }
-header > ul a:hover li {
+header > ul .header-hov {
+  width: 100%;
   border-top: 3px solid #f38181;
+  height: 100%;
+  position: absolute;
+  top: -3px;
+  width: 60px;
+  opacity: 0;
+}
+header > ul a:hover li .header-hov {
+  opacity: 1;
 }
 
-.img1,
-.img2 {
-  margin-right: -65px;
+.img1 {
+  margin-left: 30px;
 }
 
 .last-il {
@@ -276,6 +308,40 @@ header > ul a:hover li {
   width: 62%;
   margin: 0 auto;
   background-color: #fff;
+}
+.container .hov-effect {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgb(242, 219, 139);
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(242, 219, 139, 0.8)), to(rgba(238, 137, 137, 0.7)));
+  background: linear-gradient(0deg, rgba(242, 219, 139, 0.8) 0%, rgba(238, 137, 137, 0.7) 100%);
+  opacity: 0;
+}
+.container .hov-effect .middle {
+  position: absolute;
+  width: 250px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+.container .hov-effect img {
+  width: 25px;
+  height: 25px;
+  display: block;
+  margin: 0 auto;
+}
+.container .hov-effect span {
+  font-size: 25px;
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
 }
 .container h3 {
   text-align: center;
@@ -292,7 +358,7 @@ header > ul a:hover li {
   font-weight: 700;
 }
 .container .skirtukas {
-  border-top: 3px solid red;
+  border-top: 3px solid #f38181;
   width: 60px;
   margin: 0 auto;
   margin-top: 40px;
@@ -316,13 +382,25 @@ header > ul a:hover li {
 .container ul li:first-child {
   display: inline-block;
   margin-right: 5%;
+  position: relative;
+}
+.container ul li:first-child:hover .hov-effect {
+  opacity: 1;
 }
 .container ul li:nth-child(2) {
   display: inline-block;
   margin-right: 5%;
+  position: relative;
+}
+.container ul li:nth-child(2):hover .hov-effect {
+  opacity: 1;
 }
 .container ul li:nth-child(3) {
   display: inline-block;
+  position: relative;
+}
+.container ul li:nth-child(3):hover .hov-effect {
+  opacity: 1;
 }
 .container ul img {
   width: 100%;
@@ -353,11 +431,14 @@ header > ul a:hover li {
   display: inline-block;
   height: 270px;
   width: 20%;
-  border: 1px solid #fff;
+  border-left: 1px solid #fff;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding-top: 84.5px;
   text-align: center;
+}
+.container-numbers li.last-li-n {
+  border-right: 1px solid white;
 }
 .container-numbers .number {
   font-size: 72px;
@@ -549,15 +630,13 @@ section.main-container .pics > div {
 }
 section.main-container .pics > div img {
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  vertical-align: top;
 }
 section.main-container .pics > div:nth-child(2) {
   display: inline-block;
   width: 50%;
   font-size: 0;
-  background-color: red;
-  height: 100%;
+  vertical-align: top;
 }
 section.main-container .pics > div:nth-child(2) > div {
   border: 1px solid #e5e5e5;
@@ -587,16 +666,18 @@ section.main-container .photog span + span {
 }
 section.main-container .pics > div:nth-child(2) p {
   display: inline-block;
-  width: 98%;
+  width: 100%;
   font-size: 16px;
   margin: 0;
-  height: 50px;
   overflow: scroll;
   overflow-x: hidden;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-style: italic;
-  padding-left: 10px;
+  padding-right: 25px;
+  padding-left: 25px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 section.queate {
@@ -626,7 +707,6 @@ section.queate blockquote {
 section.queate div > div:first-child {
   display: inline-block;
   border: 3px solid #95e1d3;
-  width: 18%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -640,7 +720,7 @@ section.queate img {
   margin: 34px;
 }
 section.queate hr {
-  border-top: 3px solid red;
+  border-top: 3px solid #f38181;
   width: 60px;
   margin-left: 0px;
   display: inline-block;
@@ -881,6 +961,7 @@ section.queate span {
 }
 .gallery .kaire :first-child:hover .bg {
   opacity: 1;
+  cursor: pointer;
 }
 .gallery .kaire :nth-child(2) {
   width: 50%;
@@ -899,6 +980,7 @@ section.queate span {
 }
 .gallery .kaire :nth-child(2):hover .bg {
   opacity: 1;
+  cursor: pointer;
 }
 .gallery .kaire :nth-child(3) {
   width: 50%;
@@ -916,6 +998,7 @@ section.queate span {
 }
 .gallery .kaire :nth-child(3):hover .bg {
   opacity: 1;
+  cursor: pointer;
 }
 .gallery .kaire :nth-child(4) {
   width: 50%;
@@ -930,6 +1013,7 @@ section.queate span {
 }
 .gallery .kaire :nth-child(4):hover .bg {
   opacity: 1;
+  cursor: pointer;
 }
 .gallery .visas {
   width: 25%;
@@ -954,6 +1038,7 @@ section.queate span {
 }
 .gallery .visas :hover .bg {
   opacity: 1;
+  cursor: pointer;
 }
 .gallery .desine {
   display: inline-block;
@@ -973,7 +1058,7 @@ section.queate span {
 }
 .gallery .desine :first-child:hover .bg {
   opacity: 1;
-  z-index: 1;
+  cursor: pointer;
 }
 .gallery .desine :nth-child(2) {
   display: inline-block;
@@ -991,7 +1076,7 @@ section.queate span {
 }
 .gallery .desine :nth-child(2):hover .bg {
   opacity: 1;
-  z-index: 1;
+  cursor: pointer;
 }
 
 .fix {
@@ -1004,13 +1089,12 @@ section.queate span {
 
 .queate-2 {
   width: 100%;
-  margin-top: 119px;
+  margin-top: 91px;
 }
 .queate-2 .main-div {
   width: 50%;
   margin: 0 auto;
   font-size: 0;
-  padding-top: 80px;
   padding-bottom: 80px;
 }
 .queate-2 blockquote {
@@ -1042,7 +1126,7 @@ section.queate span {
           box-sizing: border-box;
 }
 .queate-2 hr {
-  border-top: 3px solid red;
+  border-top: 3px solid #f38181;
   width: 60px;
   margin-left: 0px;
   display: inline-block;
@@ -1156,6 +1240,7 @@ section.queate span {
 .testimonials .testi-pic {
   width: auto;
   display: inline-block;
+  vertical-align: top;
 }
 .testimonials .testi-descr {
   width: 75% !important;
@@ -1349,7 +1434,7 @@ section.queate span {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   text-align: left;
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid #e5e5e5;
   width: 95%;
   padding-bottom: 15px;
   margin-bottom: 0;
@@ -1396,6 +1481,7 @@ section.queate span {
           box-sizing: border-box;
   height: 36px;
   border: 1px solid #95e1d3;
+  vertical-align: top;
 }
 .last-blog > div:nth-child(2) form input::-webkit-input-placeholder {
   font-size: 15px;
@@ -1448,6 +1534,7 @@ section.queate span {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   color: white;
+  cursor: pointer;
 }
 .last-blog > div:nth-child(3) {
   display: inline-block;
@@ -1519,4 +1606,21 @@ section.queate span {
   font-style: italic;
   font-weight: 300;
   color: #333333;
+}
+
+footer {
+  border-top: 1px solid #e5e5e5;
+  width: 100%;
+}
+footer p {
+  width: 62%;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #333333;
+}
+footer p span {
+  color: #f38181;
 }/*# sourceMappingURL=main.css.map */
