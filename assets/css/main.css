@@ -137,13 +137,6 @@ table {
 
 /* -------------------------- Fonts importas -------------------------- */
 /* -------------------------- Mano kodas -------------------------- */
-html,
-body {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-}
-
 header {
   font-size: 0;
   height: 100vh;
@@ -1638,6 +1631,16 @@ section.queate span {
   font-weight: 400;
   padding: 15px;
   text-align: center;
+  display: none;
+}
+
+.for-smaller-blogss {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 15px;
+  text-align: center;
+  display: none;
 }
 
 footer {
@@ -1665,10 +1668,10 @@ footer p span {
 }
 @media only screen and (max-width: 1250px) {
   header h1 {
-    font-size: 3rem !important;
+    font-size: 2.5rem !important;
   }
   header h2 {
-    font-size: 7rem !important;
+    font-size: 5rem !important;
   }
   div.blogs {
     vertical-align: top;
@@ -1704,6 +1707,12 @@ footer p span {
   }
 }
 @media only screen and (max-width: 992px) {
+  header h1 {
+    font-size: 2rem !important;
+  }
+  header h2 {
+    font-size: 4rem !important;
+  }
   header div nav ul {
     width: 90% !important;
     margin-left: 10% !important;
@@ -1770,6 +1779,9 @@ footer p span {
   }
 }
 @media only screen and (max-width: 768px) {
+  .for-smaller-screens {
+    display: block;
+  }
   header {
     position: relative;
   }
@@ -1796,8 +1808,20 @@ footer p span {
   .gallery .kaire {
     width: 100%;
   }
+  .gallery .kaire :nth-child(2) .bg {
+    left: 50%;
+    width: 50% !important;
+  }
+  .gallery .kaire :first-child {
+    -o-object-position: bottom;
+       object-position: bottom;
+  }
   .gallery .desine {
     width: 75%;
+  }
+  .gallery .desine :nth-child(2) .bg {
+    left: 25%;
+    width: 75% !important;
   }
   .visas {
     width: 25%;
@@ -1873,6 +1897,12 @@ footer p span {
   }
 }
 @media only screen and (max-width: 500px) {
+  header h1 {
+    font-size: 1.5rem !important;
+  }
+  header h2 {
+    font-size: 2.2rem !important;
+  }
   .last-blog > div:nth-child(3) {
     width: 100%;
   }
@@ -1942,5 +1972,65 @@ footer p span {
   }
   .gallery .desine :nth-child(2) .bg .content-to-center {
     text-align: center;
+  }
+  nav {
+    margin: 0 auto;
+    padding-top: 5px;
+  }
+  nav ul {
+    margin-left: 0 !important;
+    width: 100%;
+  }
+  nav a {
+    font-size: 10px;
+  }
+  nav :nth-child(6) img {
+    margin: 0;
+    width: 15px;
+    text-align: right;
+    margin: 0 auto;
+    display: block;
+  }
+  .queate-2 .main-div {
+    position: relative;
+  }
+  .queate-2 .main-div img {
+    position: absolute;
+    width: 50vw;
+    height: 50vw;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    -webkit-filter: blur(2px);
+            filter: blur(2px);
+    -webkit-filter: brightness(65%);
+            filter: brightness(65%);
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+  .queate-2 blockquote {
+    position: relative;
+    z-index: 1;
+    width: 82% !important;
+    text-shadow: 2px 2px #000000;
+    color: rgb(255, 255, 255);
+    padding: 0;
+    width: 100% !important;
+  }
+  .queate-2 blockquote span {
+    color: white;
+  }
+  .universal-container ul li {
+    margin-right: 0 !important;
+  }
+  .last-blog > div:first-child > p:nth-child(2) {
+    display: none;
+  }
+  .last-blog > div:nth-child(2) {
+    width: 100%;
+  }
+  .for-smaller-blogss {
+    display: block;
   }
 }/*# sourceMappingURL=main.css.map */
