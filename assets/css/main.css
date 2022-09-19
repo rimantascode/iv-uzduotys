@@ -429,18 +429,22 @@ header > ul a:hover li .header-hov {
   margin: 0 auto;
   font-size: 0;
   display: block;
-  border-left: 1px solid #fff;
 }
 .container-numbers li {
   font-size: 14px;
   display: inline-block;
   width: 20%;
-  border-left: 1px solid #fff;
+  border-left: 1px solid white;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding-top: 91px;
-  padding-bottom: 91px;
+  padding-top: 84px;
+  padding-bottom: 84px;
+  vertical-align: top;
   text-align: center;
+}
+.container-numbers li p {
+  visibility: hidden;
+  font-size: 10px;
 }
 .container-numbers li.last-li-n {
   border-right: 1px solid white;
@@ -450,7 +454,6 @@ header > ul a:hover li .header-hov {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   color: #fff;
-  display: block;
 }
 .container-numbers .text {
   font-size: 14px;
@@ -1558,7 +1561,6 @@ section.queate span {
   vertical-align: top;
 }
 .last-blog div.blogs div:last-child {
-  background-color: red;
   width: 100%;
 }
 .last-blog .blogs > div {
@@ -1574,7 +1576,10 @@ section.queate span {
   font-weight: 400;
   color: #333333;
   text-transform: uppercase;
-  margin-top: 25px;
+  margin-top: 18px;
+  padding-left: 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 .last-blog .blogs > div span small {
   font-size: 13px;
@@ -1726,10 +1731,11 @@ footer p span {
     margin-left: 10% !important;
   }
   .container-numbers .number {
-    font-size: 42px;
+    font-size: 36px;
   }
   .container-numbers .text {
-    font-size: 18px;
+    padding-top: 10px;
+    font-size: 10px;
   }
   .container-numbers ul li:last-child .number {
     padding-bottom: 14px;
@@ -1903,6 +1909,12 @@ footer p span {
   .a-services :nth-child(7) .main {
     width: 100%;
   }
+  .numbers {
+    font-size: 18px;
+  }
+  .text {
+    font-size: 10px;
+  }
 }
 @media only screen and (max-width: 500px) {
   header h1 {
@@ -2040,5 +2052,20 @@ footer p span {
   }
   .for-smaller-blogss {
     display: block;
+  }
+  .container-numbers li {
+    border: 0px;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 10px !important;
+  }
+  .container-numbers .last-li-n {
+    border: 0px !important;
+  }
+  .container-numbers .number {
+    font-size: 18px;
+  }
+  .container-numbers .text {
+    font-size: 14px;
   }
 }/*# sourceMappingURL=main.css.map */
