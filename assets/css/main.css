@@ -1869,4 +1869,66 @@ footer p span {
   .last-blog > div:nth-child(3) {
     width: 100%;
   }
+  .gallery .kaire :first-child {
+    width: 100vw;
+    height: 50vw;
+    -o-object-position: bottom;
+       object-position: bottom;
+  }
+  .gallery .kaire :nth-child(2) {
+    width: 100%;
+    height: 50vw;
+  }
+  .gallery .kaire :nth-child(2) .bg {
+    width: 100% !important;
+    left: 0;
+  }
+  .gallery .kaire :nth-child(3) {
+    width: 100%;
+    height: 50vw;
+  }
+  .gallery .kaire :nth-child(4) {
+    width: 100%;
+    height: 50vw;
+  }
+  .gallery .visas {
+    width: 100%;
+    height: 50vw;
+  }
+  .gallery .desine {
+    width: 100%;
+  }
+  .gallery {
+    width: 100% !important;
+  }
+  .gallery .desine :first-child {
+    width: 100% !important;
+    height: 50vw;
+  }
+  .gallery .desine :first-child .bg {
+    left: 0;
+  }
+  .gallery .desine :first-child .bg img {
+    width: 35px !important;
+  }
+  .gallery .desine :first-child .bg .content-to-center {
+    text-align: center;
+  }
+  .gallery .desine :first-child .bg .content-to-center small {
+    text-align: center !important;
+  }
+  .gallery .desine :nth-child(2) {
+    width: 100% !important;
+    height: 50vw;
+  }
+  .gallery .desine :nth-child(2) .bg {
+    left: 0;
+    width: 100% !important;
+  }
+  .gallery .desine :nth-child(2) .bg img {
+    width: 35px !important;
+  }
+  .gallery .desine :nth-child(2) .bg .content-to-center {
+    text-align: center;
+  }
 }/*# sourceMappingURL=main.css.map */
