@@ -1650,6 +1650,7 @@ section.queate {
     display: inline-block;
     width: 30%;
     box-sizing: border-box;
+    background: yellow;
   }
   .blogs > div {
     display: inline-block;
@@ -1683,6 +1684,8 @@ section.queate {
     width: 30%;
     box-sizing: border-box;
     font-size: 0;
+    background-color: red;
+    vertical-align: top;
     .pics-rows {
       margin-top: 2%;
       div {
@@ -1691,7 +1694,7 @@ section.queate {
         height: auto;
         img {
           object-fit: cover;
-          width: 100%;
+          width: 100% !important;
         }
       }
       :first-child {
@@ -1700,6 +1703,9 @@ section.queate {
       :nth-child(2) {
         margin-right: 2%;
       }
+      // :nth-child(3) {
+      //   background-color: yellow;
+      // }
     }
     span {
       margin-top: 10px;
@@ -1709,6 +1715,11 @@ section.queate {
       font-style: $font-style-talic;
       font-weight: $font-weight-Light;
       color: $color-secondary-dark;
+      // display: block;
+    }
+    :nth-child(4) {
+      background-color: green;
+      width: 100%;
     }
   }
 }

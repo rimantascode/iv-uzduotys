@@ -1549,6 +1549,7 @@ section.queate span {
   width: 30%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  background: yellow;
 }
 .last-blog .blogs > div {
   display: inline-block;
@@ -1582,6 +1583,8 @@ section.queate span {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-size: 0;
+  background-color: red;
+  vertical-align: top;
 }
 .last-blog :nth-child(4) .pics-rows {
   margin-top: 2%;
@@ -1594,7 +1597,7 @@ section.queate span {
 .last-blog :nth-child(4) .pics-rows div img {
   -o-object-fit: cover;
      object-fit: cover;
-  width: 100%;
+  width: 100% !important;
 }
 .last-blog :nth-child(4) .pics-rows :first-child {
   margin-right: 2%;
@@ -1610,6 +1613,10 @@ section.queate span {
   font-style: italic;
   font-weight: 300;
   color: #333333;
+}
+.last-blog :nth-child(4) :nth-child(4) {
+  background-color: green;
+  width: 100%;
 }
 
 footer {
