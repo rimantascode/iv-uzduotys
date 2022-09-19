@@ -422,7 +422,6 @@ header > ul a:hover li .header-hov {
 }
 
 .container-numbers {
-  height: 270px;
   background-color: #95e1d3;
 }
 .container-numbers ul {
@@ -430,16 +429,17 @@ header > ul a:hover li .header-hov {
   margin: 0 auto;
   font-size: 0;
   display: block;
+  border-left: 1px solid #fff;
 }
 .container-numbers li {
   font-size: 14px;
   display: inline-block;
-  height: 270px;
   width: 20%;
   border-left: 1px solid #fff;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding-top: 84.5px;
+  padding-top: 91px;
+  padding-bottom: 91px;
   text-align: center;
 }
 .container-numbers li.last-li-n {
@@ -457,9 +457,6 @@ header > ul a:hover li .header-hov {
   font-weight: 400;
   color: #fff;
   display: block;
-}
-.container-numbers .text {
-  padding-top: 15px;
 }
 
 .a-services {
@@ -1558,6 +1555,11 @@ section.queate span {
   width: 30%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  vertical-align: top;
+}
+.last-blog div.blogs div:last-child {
+  background-color: red;
+  width: 100%;
 }
 .last-blog .blogs > div {
   display: inline-block;
@@ -1584,7 +1586,7 @@ section.queate span {
 .last-blog .blogs > div img {
   width: 40%;
 }
-.last-blog div:nth-child(4) {
+.last-blog :nth-child(4) {
   display: inline-block;
   font-size: 0;
   width: 30%;
@@ -1593,26 +1595,26 @@ section.queate span {
   font-size: 0;
   vertical-align: top;
 }
-.last-blog div:nth-child(4) .pics-rows {
+.last-blog :nth-child(4) .pics-rows {
   margin-top: 2%;
 }
-.last-blog div:nth-child(4) .pics-rows div {
+.last-blog :nth-child(4) .pics-rows div {
   display: inline-block;
   width: 32%;
   height: auto;
 }
-.last-blog div:nth-child(4) .pics-rows div img {
+.last-blog :nth-child(4) .pics-rows div img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100% !important;
 }
-.last-blog div:nth-child(4) .pics-rows :first-child {
+.last-blog :nth-child(4) .pics-rows :first-child {
   margin-right: 2%;
 }
-.last-blog div:nth-child(4) .pics-rows :nth-child(2) {
+.last-blog :nth-child(4) .pics-rows :nth-child(2) {
   margin-right: 2%;
 }
-.last-blog div:nth-child(4) span {
+.last-blog :nth-child(4) span {
   margin-top: 10px;
   width: 50%;
   font-size: 13px;
@@ -1621,7 +1623,7 @@ section.queate span {
   font-weight: 300;
   color: #333333;
 }
-.last-blog div:nth-child(4) :nth-child(4) {
+.last-blog :nth-child(4) :nth-child(4) {
   width: 100%;
 }
 
@@ -1704,6 +1706,12 @@ footer p span {
   }
   .unique-design img.phone {
     right: 5%;
+  }
+  .container-numbers ul {
+    height: auto;
+  }
+  .container-numbers .number {
+    font-size: 32px;
   }
 }
 @media only screen and (max-width: 992px) {

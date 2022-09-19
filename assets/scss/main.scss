@@ -461,23 +461,26 @@ header > ul {
 }
 
 .container-numbers {
-  height: 270px;
+  // height: 270px;
   background-color: #95e1d3;
+
   ul {
     width: 62%;
     margin: 0 auto;
     font-size: 0;
     display: block;
+    border-left: 1px solid $body-primary-color;
   }
 
   li {
     font-size: 14px;
     display: inline-block;
-    height: 270px;
     width: 20%;
     border-left: 1px solid $body-primary-color;
     box-sizing: border-box;
-    padding-top: calc((270px - 101px) / 2);
+
+    padding-top: 91px;
+    padding-bottom: 91px;
     text-align: center;
   }
   li.last-li-n {
@@ -497,9 +500,6 @@ header > ul {
     font-weight: $font-weight-regular;
     color: $body-primary-color;
     display: block;
-  }
-  .text {
-    padding-top: 15px;
   }
 }
 
@@ -1600,7 +1600,6 @@ section.queate {
     }
     p:nth-child(3) {
       text-align: left;
-
       font-family: $font-family-3;
       font-weight: $font-weight-Light;
       font-style: $font-style-talic;
@@ -1665,7 +1664,12 @@ section.queate {
     display: inline-block;
     width: 30%;
     box-sizing: border-box;
+    vertical-align: top;
     // background: yellow;
+    div:last-child {
+      background-color: red;
+      width: 100%;
+    }
   }
   .blogs > div {
     display: inline-block;
@@ -1693,7 +1697,7 @@ section.queate {
       width: 40%;
     }
   }
-  div:nth-child(4) {
+  :nth-child(4) {
     display: inline-block;
     font-size: 0;
     width: 30%;
@@ -1719,9 +1723,6 @@ section.queate {
       :nth-child(2) {
         margin-right: 2%;
       }
-      // :nth-child(3) {
-      //   background-color: yellow;
-      // }
     }
     span {
       margin-top: 10px;
@@ -1819,6 +1820,14 @@ footer {
   }
   .unique-design img.phone {
     right: 5%;
+  }
+  .container-numbers {
+    ul {
+      height: auto;
+    }
+    .number {
+      font-size: 32px;
+    }
   }
 }
 
