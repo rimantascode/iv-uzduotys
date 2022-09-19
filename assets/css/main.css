@@ -208,6 +208,12 @@ header div nav li:hover .nav-hov {
   opacity: 1;
 }
 
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
 header > div:nth-child(2) {
   text-align: center;
   position: absolute;
@@ -1406,8 +1412,11 @@ section.queate span {
   margin: 0;
   padding: 0;
   vertical-align: middle;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
 }
-.last-blog .logo {
+.last-blog #logo {
   font-size: 46px;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
@@ -1464,7 +1473,7 @@ section.queate span {
 }
 .last-blog > div:nth-child(2) p:nth-child(3) .image-pin {
   height: 20px;
-  width: 15px;
+  width: 15px !important;
 }
 .last-blog > div:nth-child(2) p:nth-child(3) span {
   vertical-align: text-bottom;
@@ -1549,7 +1558,6 @@ section.queate span {
   width: 30%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background: yellow;
 }
 .last-blog .blogs > div {
   display: inline-block;
@@ -1576,36 +1584,35 @@ section.queate span {
 .last-blog .blogs > div img {
   width: 40%;
 }
-.last-blog :nth-child(4) {
+.last-blog div:nth-child(4) {
   display: inline-block;
   font-size: 0;
   width: 30%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-size: 0;
-  background-color: red;
   vertical-align: top;
 }
-.last-blog :nth-child(4) .pics-rows {
+.last-blog div:nth-child(4) .pics-rows {
   margin-top: 2%;
 }
-.last-blog :nth-child(4) .pics-rows div {
+.last-blog div:nth-child(4) .pics-rows div {
   display: inline-block;
   width: 32%;
   height: auto;
 }
-.last-blog :nth-child(4) .pics-rows div img {
+.last-blog div:nth-child(4) .pics-rows div img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100% !important;
 }
-.last-blog :nth-child(4) .pics-rows :first-child {
+.last-blog div:nth-child(4) .pics-rows :first-child {
   margin-right: 2%;
 }
-.last-blog :nth-child(4) .pics-rows :nth-child(2) {
+.last-blog div:nth-child(4) .pics-rows :nth-child(2) {
   margin-right: 2%;
 }
-.last-blog :nth-child(4) span {
+.last-blog div:nth-child(4) span {
   margin-top: 10px;
   width: 50%;
   font-size: 13px;
@@ -1614,9 +1621,16 @@ section.queate span {
   font-weight: 300;
   color: #333333;
 }
-.last-blog :nth-child(4) :nth-child(4) {
-  background-color: green;
+.last-blog div:nth-child(4) :nth-child(4) {
   width: 100%;
+}
+
+.for-smaller-screens {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 15px;
+  text-align: center;
 }
 
 footer {
@@ -1748,21 +1762,44 @@ footer p span {
     font-size: 12px;
   }
 }
-@media only screen and (max-width: 992px) and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
+  header {
+    position: relative;
+  }
+  header nav {
+    top: 100px;
+    position: absolute;
+    width: 100% !important;
+    left: 0;
+    display: block;
+  }
+  header nav ul {
+    margin: 0 auto !important;
+  }
+  header nav ul li {
+    text-align: left;
+  }
+  .testimonials p {
+    width: 60%;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 91px;
+  }
   .gallery .kaire {
-    width: 100%;
+    width: 99.5%;
   }
   .gallery .desine {
-    width: 75%;
+    width: 74.5%;
   }
   .visas {
     width: 25%;
   }
   header h1 {
-    font-size: 2rem !important;
+    font-size: 1.5rem !important;
   }
   header h2 {
-    font-size: 5rem !important;
+    font-size: 2.5rem !important;
   }
   .last-blog :nth-child(4) {
     width: 100% !important;
@@ -1773,8 +1810,58 @@ footer p span {
   .last-blog > div:first-child > p {
     width: 50%;
   }
-  .last-blog > div:nth-child(2),
-.last-blog > div:nth-child(3) {
-    width: 50%;
+  .last-blog > div:nth-child(2) {
+    width: 65%;
+    padding: 15px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .last-blog > div:nth-child(3) {
+    width: 35%;
+    padding: 15px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .last-blog > div:nth-child(3) div {
+    margin-bottom: 15px;
+  }
+  .last-blog > div:nth-child(3) span {
+    width: 100%;
+  }
+  .last-blog > div:nth-child(3) .image-pin {
+    width: 25px !important;
+  }
+  .last-blog > div:nth-child(3) img {
+    width: 100%;
+  }
+  .universal-container ul li {
+    padding-bottom: 25px;
+    width: 100%;
+  }
+  .unique-design img.tablet {
+    width: 100%;
+    height: auto;
+  }
+  .unique-design img.phone {
+    width: 30%;
+    height: auto;
+  }
+  .unique-design {
+    padding-bottom: 0;
+  }
+  section.main-container .pics > div {
+    width: 100%;
+  }
+  section.main-container .pics > div .descr-left {
+    width: 100%;
+  }
+  section.main-container .pics > div:nth-child(2) {
+    width: 100%;
+  }
+  .a-services :nth-child(5) .main {
+    width: 100%;
+  }
+  .a-services :nth-child(7) .main {
+    width: 100%;
   }
 }/*# sourceMappingURL=main.css.map */
