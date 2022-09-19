@@ -140,7 +140,12 @@ table {
 // font-family: 'Montserrat', sans-serif;
 // font-family: 'Roboto', sans-serif;
 /* -------------------------- Mano kodas -------------------------- */
-
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
 header {
   font-size: 0;
   height: 100vh;
@@ -1904,10 +1909,10 @@ footer {
     margin-bottom: 91px;
   }
   .gallery .kaire {
-    width: 99.5%;
+    width: 100%;
   }
   .gallery .desine {
-    width: 74.5%;
+    width: 75%;
   }
   .visas {
     width: 25%;
@@ -1990,6 +1995,13 @@ footer {
   .last-blog > div:nth-child(3) {
     width: 100%;
   }
+  .gallery {
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    width: 100% !important;
+    box-sizing: border-box;
+  }
 
   .gallery .kaire :first-child {
     width: 100vw;
@@ -2021,9 +2033,6 @@ footer {
     width: 100%;
   }
 
-  .gallery {
-    width: 100% !important;
-  }
   .gallery .desine :first-child {
     width: 100% !important;
     height: 50vw;
