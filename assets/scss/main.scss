@@ -140,7 +140,7 @@ table {
 
 header {
   font-size: 0;
-  height: 100vh;
+  height: 100vh !important;
   width: 100%;
   background-image: url(../images/mogo/erelis-background.jpg);
   background-position: center;
@@ -313,9 +313,6 @@ header > ul {
       }
     }
   }
-}
-.img1 {
-  // margin-left: 30px;
 }
 
 .last-il {
