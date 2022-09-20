@@ -739,7 +739,7 @@ section.queate span {
   background: rgb(242, 219, 139);
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(242, 219, 139, 0.8)), to(rgba(238, 137, 137, 0.7)));
   background: linear-gradient(0deg, rgba(242, 219, 139, 0.8) 0%, rgba(238, 137, 137, 0.7) 100%);
-  height: calc(100% - 49px);
+  height: calc(100% - 75px);
   opacity: 0;
   text-align: center;
   display: table;
@@ -1786,6 +1786,14 @@ footer p span {
   }
 }
 @media only screen and (max-width: 768px) {
+  .universal-container ul li {
+    margin-right: 0 !important;
+    padding: 0 !important;
+    margin-bottom: 25px;
+  }
+  .hov-efect {
+    height: calc(100% - 50px);
+  }
   header div nav ul {
     position: absolute;
     margin: 0 !important;
