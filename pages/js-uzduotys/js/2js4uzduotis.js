@@ -15,7 +15,7 @@ herojai = [
     {
         name:"Gelezenis zmogus",
         skill:"Platus ginklu arsenalas"
-    }
+    },
 ]
 
 herojai.forEach(function(element,index){

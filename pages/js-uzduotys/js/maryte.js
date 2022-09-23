@@ -1,62 +1,64 @@
-var marytes_obuoliai = 10;
-var jonuko_obuoliai = 9;
+// var marytes_obuoliai = 10;
+// var jonuko_obuoliai = 9;
 
- var bendri_obuoliai = marytes_obuoliai + jonuko_obuoliai;
- console.log(bendri_obuoliai)
-//--
- var number = 8;
- var snumber = 2;
+//  var bendri_obuoliai = marytes_obuoliai + jonuko_obuoliai;
+//  console.log(bendri_obuoliai)
+// //--
+//  var number = 8;
+//  var snumber = 2;
 
- number += snumber;
- console.log(number)
-//--
-if (marytes_obuoliai > jonuko_obuoliai){
-console.log("Marytė turi daugiau obuolių nei Jonukas.")
-} else if (marytes_obuoliai < jonuko_obuoliai) {
-console.log("Jonukas turi daugiau obuoliu nei Maryte.")
-}else{
-    console.log("Atiduokime obuolius Editai.") 
-}
+//  number += snumber;
+//  console.log(number)
+// //--
+// if (marytes_obuoliai > jonuko_obuoliai){
+// console.log("Marytė turi daugiau obuolių nei Jonukas.")
+// } else if (marytes_obuoliai < jonuko_obuoliai) {
+// console.log("Jonukas turi daugiau obuoliu nei Maryte.")
+// }else{
+//     console.log("Atiduokime obuolius Editai.") 
+// }
+
+//-----
 // arba galima prašyti salygą else if (marytes_obuoliai == jonuko_obuoliai){
 //     console.log("Atiduokime obuolius Editai.")
 // }
 
 
 //---
-var mano_obuoliai=3;
+// var mano_obuoliai=3;
 
-switch (mano_obuoliai) {
-    case 1:
-        console.log('Jūs turite ' + mano_obuoliai + ' obuolį' );
-        break;
-    case 2:
-        console.log('Jūs turite ' + mano_obuoliai + ' obuolius' );
-        break;
-    case 3:
-        console.log('Jūs turite ' + mano_obuoliai + ' obuolius' );
-        break;
-    default:
-        console.log("Obuolių kiekis nežinomas, nes reikšmė nepatenka į sarašą");
-    }
+// switch (mano_obuoliai) {
+//     case 1:
+//         console.log('Jūs turite ' + mano_obuoliai + ' obuolį' );
+//         break;
+//     case 2:
+//         console.log('Jūs turite ' + mano_obuoliai + ' obuolius' );
+//         break;
+//     case 3:
+//         console.log('Jūs turite ' + mano_obuoliai + ' obuolius' );
+//         break;
+//     default:
+//         console.log("Obuolių kiekis nežinomas, nes reikšmė nepatenka į sarašą");
+//     }
 
 //---
-vaisiai =["Obuoliai" , "Kriaušės", "Bananai", "Apelsinai", "Mandarinai", "Vynuogės", "Ananasai"]
+// vaisiai =["Obuoliai" , "Kriaušės", "Bananai", "Apelsinai", "Mandarinai", "Vynuogės", "Ananasai"]
 
-console.log(vaisiai[2], vaisiai[4]);
+// console.log(vaisiai[2], vaisiai[4]);
 
-for( i=0; i < vaisiai.length; i++){
-console.log(vaisiai[i]);
-}
+// for( i=0; i < vaisiai.length; i++){
+// console.log(vaisiai[i]);
+// }
 
-console.log("----------------------")
-console.log("Antrojo video uzduotis")
-console.log("----------------------")
+// console.log("----------------------")
+// console.log("Antrojo video uzduotis")
+// console.log("----------------------")
 
-function product(name, price){
-    console.log("Product "+ name + " $" + price)
-}
+// function product(name, price){
+//     console.log("Product "+ name + " $" + price)
+// }
 
-product("Skietis", 2.50);
+// product("Skietis", 2.50);
 
 // console.log("----------------------")
 // console.log("po 5-ojo viedo  1 js izduociu 1 -oji uzduotis")
@@ -128,36 +130,36 @@ product("Skietis", 2.50);
 //    return "Penki " + pavadinimas + " kaina " + kaina; 
 // }
 
-// // document.body.innerHTML= kainos_skaiciavimas(2, "kriausiu");
+// document.body.innerHTML= kainos_skaiciavimas(2, "kriausiu");
 // var atsakymas = kainos_skaiciavimas(5, "Apelsinai");
 // var divas = document.createElement("div");
 // divas.innerHTML=atsakymas;
 // document.body.appendChild(divas);
 
-console.log("----------------------")
-console.log("2 js uzduociu  3-oji uzduotis")
-console.log("----------------------")
+// console.log("----------------------")
+// console.log("2 js uzduociu  3-oji uzduotis")
+// console.log("----------------------")
 
-// 1. pasidaryti HTML.
-// 2. Paiimti reiksmes.
-// 2.1 issiaiskiniti kaip paiimti reiksmes
-// 3.suskaiciuoti.
-// 4. Atvaizsuoti ekrane.
-function kainos_skaiciavimas(kaina, pavadinimas, kiekis){
-    var suma = kaina*kiekis;
-       return  pavadinimas + " :" + kiekis + " X " + "$" + kaina + " viso moketi " + suma; 
-    }
+// // 1. pasidaryti HTML.
+// // 2. Paiimti reiksmes.
+// // 2.1 issiaiskiniti kaip paiimti reiksmes
+// // 3.suskaiciuoti.
+// // 4. Atvaizsuoti ekrane.
+// function kainos_skaiciavimas(kaina, pavadinimas, kiekis){
+//     var suma = kaina*kiekis;
+//        return  pavadinimas + " :" + kiekis + " X " + "$" + kaina + " viso moketi " + suma; 
+//     }
    
-var btn=document.getElementById("prideti");
-    btn.addEventListener("click", function(){
-        var pavadinimas = document.querySelector('input[placeholder=Pavadinimas]').value;
-        var kaina = document.querySelector('input[placeholder=Kaina]').value;
-        var kiekis = document.getElementById("kiekis").value;
-        ats=kainos_skaiciavimas(kaina, pavadinimas, kiekis);
-        var divuks=document.createElement("div");
-        divuks.innerHTML=ats;
-        document.body.appendChild(divuks);
-    })
+// var btn=document.getElementById("prideti");
+//     btn.addEventListener("click", function(){
+//         var pavadinimas = document.querySelector('input[placeholder=Pavadinimas]').value;
+//         var kaina = document.querySelector('input[placeholder=Kaina]').value;
+//         var kiekis = document.getElementById("kiekis").value;
+//         ats=kainos_skaiciavimas(kaina, pavadinimas, kiekis);
+//         var divuks=document.createElement("div");
+//         divuks.innerHTML=ats;
+//         document.body.appendChild(divuks);
+//     })
 
 
 
