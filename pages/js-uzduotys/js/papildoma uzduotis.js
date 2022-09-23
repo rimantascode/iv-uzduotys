@@ -115,39 +115,97 @@
     
 // console.log(Cars.travled)
 
-class futbolistas {
-    constructor(vardas, pavarde, ugis, amzius, begimo_greitis){
-        this.vardas =vardas;
-        this.pavarde = pavarde;
-        this.ugis = ugis;
-        this.amzius = amzius;
-        this.begimo_greitis=begimo_greitis
+//---- nr1
+
+// class futbolistas {
+//     constructor(vardas, pavarde, ugis, amzius, begimo_greitis){
+//         this.vardas =vardas;
+//         this.pavarde = pavarde;
+//         this.ugis = ugis;
+//         this.amzius = amzius;
+//         this.begimo_greitis=begimo_greitis
+//     }
+//     get asmuo () {
+//         return this.duomenys();
+//     }
+
+//     duomenys(){
+//         return this.vardas+ " "+this.pavarde +" ugis mm: " + this.ugis + " amzius: " + this.amzius + " begimo_greitis: " + this.begimo_greitis + " km/h"
+//     }
+
+// }
+// const futbolistas_1 = new futbolistas("Kestas", "Atenietis", 185, 30, 42);
+// const futbolistas_2 = new futbolistas("Robertas", "Bardauskas", 195, 25, 28);
+// const futbolistas_3 = new futbolistas("Gregoras", "Baltazaras", 175, 28, 20);
+
+// var uls=document.createElement("ul");
+//     uls.innerHTML="<strong>Kandidatai:<strong>";
+//     document.body.appendChild(uls)
+//     li = document.createElement("li");
+//     li.innerHTML = futbolistas_1.asmuo
+//     uls.appendChild(li)
+//     li = document.createElement("li");
+//     li.innerHTML = futbolistas_2.asmuo;
+//     uls.appendChild(li)
+//     li = document.createElement("li");
+//     li.innerHTML = futbolistas_3.asmuo;
+//     uls.appendChild(li)
+   
+ 
+///--------- nr2
+
+class Automobilis {
+    constructor(brand, speed, distance ){
+        this.brand =brand;
+        this.speed = speed;
+        this.distance = distance;
     }
-    get asmuo () {
+    get detales () {
         return this.duomenys();
     }
 
     duomenys(){
-        return this.vardas+ " "+this.pavarde +" ugis mm: " + this.ugis + " amzius: " + this.amzius + " begimo_greitis: " + this.begimo_greitis + " km/h"
+        return "Pavadinimas:  " + this.brand+ "  ,Greitis:  "+this.speed + " ,Nuvaziuotas kelias:  " + this.distance;
+    }
+
+    nuvaziuotas(){
+        return this.distance / this.speed
     }
 
 }
-const futbolistas_1 = new futbolistas("Kestas", "Atenietis", 185, 30, 42);
-const futbolistas_2 = new futbolistas("Robertas", "Bardauskas", 195, 25, 28);
-const futbolistas_3 = new futbolistas("Gregoras", "Baltazaras", 175, 28, 20);
+
+const Automobilis_1 = new Automobilis("BMW", 150, 300);
+const Automobilis_2 = new Automobilis("Mercedes", 250, 1000);
+const Automobilis_3 = new Automobilis("Walkswagen", 180,800 );
+const Automobilis_4 = new Automobilis("Land Rover", 150, 400);
+const Automobilis_5 = new Automobilis("Audi", 190, 600);
+
+array =[Automobilis_1, Automobilis_2, Automobilis_3, Automobilis_4, Automobilis_5]
+
+// toliausiai = [Automobilis_1.nuvaziuotas(), Automobilis_2.nuvaziuotas(), Automobilis_3.nuvaziuotas(),Automobilis_4.nuvaziuotas(),Automobilis_5.nuvaziuotas()];
+// console.log(toliausiai.sort())
+
+// function nuvaziuos_toliausiai(){
+//     for (let i = 0; i< toliausiai.length; i++){
+//         console.log(toliausiai[i]) 
+//     }
+// }
+// console.log(nuvaziuos_toliausiai() + "kas tai");
 
 var uls=document.createElement("ul");
-    uls.innerHTML="<strong>Kandidatai:<strong>";
     document.body.appendChild(uls)
-    li = document.createElement("li");
-    li.innerHTML = futbolistas_1.asmuo
-    uls.appendChild(li)
-    li = document.createElement("li");
-    li.innerHTML = futbolistas_2.asmuo;
-    uls.appendChild(li)
-    li = document.createElement("li");
-    li.innerHTML = futbolistas_3.asmuo;
-    uls.appendChild(li)
-   
- 
+var button = document.createElement("button")
+button.innerHTML = "Kurti Automobilius"
+document.body.appendChild(button)
+    button.addEventListener("click", function(){
+        for(i=0; i<array.length; i++){
+        li = document.createElement("li");
+        li.innerHTML = array[i].detales
+        uls.appendChild(li)
+        }
+    })
+
+
+    
+
 
