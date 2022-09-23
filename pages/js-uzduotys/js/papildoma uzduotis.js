@@ -53,7 +53,7 @@ function geriausias_begikas(futbolistai){
        lis.innerHTML =element.name+ " " + element.surname;
        uls.appendChild(lis)
         if (element.begimo_greitis === geriausias_begikas(futbolistai)){
-            divuks.innerHTML = " <br>Pats greicias :" + element.name + " " + element.surname  + ", kuris bega  " + element.begimo_greitis + " km/h greiciu"
+            divuks.innerHTML = " <br>Pats greicias :" +"<strong style='font-style:italic'>"+ element.name + " " + element.surname+ "</strong>"  + ", kuris bega  " + element.begimo_greitis + " km/h greiciu."
         }
         uls.appendChild(divuks)
     });
