@@ -169,7 +169,7 @@ class Automobilis {
     }
 
     nuvaziuotas(){
-        return this.distance / this.speed
+        return this.distance;
     }
 
 }
@@ -182,15 +182,18 @@ const Automobilis_5 = new Automobilis("Audi", 190, 600);
 
 array =[Automobilis_1, Automobilis_2, Automobilis_3, Automobilis_4, Automobilis_5]
 
-// toliausiai = [Automobilis_1.nuvaziuotas(), Automobilis_2.nuvaziuotas(), Automobilis_3.nuvaziuotas(),Automobilis_4.nuvaziuotas(),Automobilis_5.nuvaziuotas()];
-// console.log(toliausiai.sort())
+toliausiai = [Automobilis_1.nuvaziuotas(), Automobilis_2.nuvaziuotas(), Automobilis_3.nuvaziuotas(),Automobilis_4.nuvaziuotas(),Automobilis_5.nuvaziuotas()];
+var pats_daugiausiai=toliausiai.sort(function(a, b){return b-a})
+    pats_daugiausiai=pats_daugiausiai[0]
+console.log(array[0].distance, pats_daugiausiai)
 
-// function nuvaziuos_toliausiai(){
-//     for (let i = 0; i< toliausiai.length; i++){
-//         console.log(toliausiai[i]) 
-//     }
-// }
-// console.log(nuvaziuos_toliausiai() + "kas tai");
+function nuvaziuota_toliausiai(){
+    for (let i = 0; i< array.length; i++){
+        if (array[i].distance === pats_daugiausiai){
+           return array[i].brand
+        }
+    }
+}
 
 var uls=document.createElement("ul");
     document.body.appendChild(uls)
@@ -198,11 +201,14 @@ var button = document.createElement("button")
 button.innerHTML = "Kurti Automobilius"
 document.body.appendChild(button)
     button.addEventListener("click", function(){
-        for(i=0; i<array.length; i++){
-        li = document.createElement("li");
+        for(i=0; i < array.length; i++){
+        var li = document.createElement("li");
         li.innerHTML = array[i].detales
         uls.appendChild(li)
         }
+        li=document.createElement("li");
+        li.innerHTML ="Daugiausiai nuvazeves yra "+ "<strong>" +nuvaziuota_toliausiai();+"</strong> "
+        uls.appendChild(li)
     })
 
 
